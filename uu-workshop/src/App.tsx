@@ -21,7 +21,7 @@ function App(): JSX.Element {
           count is {count}
         </button>
         <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
+          Edit <code>src/App.tsx</code> and save test to test HMR
         </p>
       </div>
 
