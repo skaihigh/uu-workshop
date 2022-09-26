@@ -16,7 +16,7 @@ function App(): JSX.Element {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>Vite + React + Wcag</h1>
+      <h1>Vite + React + Wcag woop</h1>
 
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more

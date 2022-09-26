@@ -52,13 +52,10 @@ function WcagViewer(): JSX.Element {
   // eslint-disable-next-line @typescript-eslint/consistent-type-assertions
   const [pa11yResult, setPa11yResult] = useState({} as Results)
 
-  console.log(pa11yResult)
-
   useEffect(() => {
     if (import.meta.hot != null) {
       import.meta.hot.on('pa11y:updated', (data: Results) => {
         // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
-        console.log('WS update hepp')
         setPa11yResult(data)
       })
     }
@@ -67,7 +64,6 @@ function WcagViewer(): JSX.Element {
   return (
     <section className="wcag-issues">
       <h2>Wcag issues</h2>
-
       {pa11yResult.issues?.map((issue, index) => {
         return (
           <div key={index}>
