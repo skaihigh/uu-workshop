@@ -13,19 +13,22 @@ const envDir = path.resolve(__dirname, 'env')
 function a11yPlugin(opts?: Options): PluginOption {
   let config: {}
 
+  /**
+   *  The default accessibility standard used by pa11y to test a page is the WCAG2AA.
+   * However, we can change it to any of the following options
+   *  - Section508, WCAG2A, WCAG2AA, or WCAG2AAA.
+   *
+   * PALLY DOCS : https://bitsofco.de/pa11y/
+   */
   return {
     name: 'a11y-plugin',
     configResolved(resolvedConfig) {
-      // store the resolved config
       config = resolvedConfig
     },
     async handleHotUpdate({ server }) {
       const result = await pa11y(`http://localhost:${process.env.VITE_PORT}`, {
-        rules: [
-          'Principle1.Guideline1_3.1_3_1_AAA',
-          'Principle1.Guideline1_4.1_4_1',
-          'Principle1.Guideline1_3.1_3_1',
-        ],
+        standard: 'WCAG2AAA', // Posible values: Section508, WCAG2A, WCAG2AA, WCAG2AAA
+        //rules: ['Principle1.Guideline1_1.1_1_1'], // Add rules to test Eks:
       })
 
       if (result.issues.length > 0) {

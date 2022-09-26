@@ -8,8 +8,9 @@ function App(): JSX.Element {
     <div className="App">
       {import.meta.env.MODE === 'development' && <WcagViewer />}
       <div>
+        <h2></h2>
         <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
+          <img src="/vite.svg" className="logo" />
         </a>
         <a href="https://reactjs.org" target="_blank" rel="noreferrer">
           <img src={reactLogo} className="logo react" alt="React logo" />

@@ -62,7 +62,7 @@ function WcagViewer(): JSX.Element {
           document.querySelectorAll(issue.selector).forEach((element) => {
             element.classList.add(styles.issue_warning)
             console.warn(
-              `WCAG fail on guidline: ${issue.code}, Error: ${issue.message}`,
+              `WCAG fail on guidline: ${issue.code}, \n Error:  ${issue.message}`,
               element
             )
           })
