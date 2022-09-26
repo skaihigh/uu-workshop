@@ -11,3 +11,12 @@
     text-align: left;
   }
 }
+
+.issue_warning {
+  border: 1px solid red;
+
+  &::before {
+    content: '⚠️';
+    margin-right: 0.5rem;
+  }
+}

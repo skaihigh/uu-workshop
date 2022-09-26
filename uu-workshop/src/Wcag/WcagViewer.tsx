@@ -18,6 +18,7 @@ interface Results {
 
 function WcagIssues(props: { issue: ResultIssue }): JSX.Element {
   const { issue } = props
+
   return (
     <ul className={styles.issue}>
       <li>
@@ -51,27 +52,46 @@ function WcagIssues(props: { issue: ResultIssue }): JSX.Element {
 function WcagViewer(): JSX.Element {
   // eslint-disable-next-line @typescript-eslint/consistent-type-assertions
   const [pa11yResult, setPa11yResult] = useState({} as Results)
+  const SHOW_HTML = false
 
   useEffect(() => {
     if (import.meta.hot != null) {
       import.meta.hot.on('pa11y:updated', (data: Results) => {
         // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
-        setPa11yResult(data)
+        if (data?.issues != null && data.issues.length > 0) {
+          setPa11yResult(data)
+        }
       })
     }
   }, [])
 
-  return (
-    <section className="wcag-issues">
-      <h2>Wcag issues</h2>
-      {pa11yResult.issues?.map((issue, index) => {
-        return (
-          <div key={index}>
-            <WcagIssues issue={issue} />
-          </div>
+  useEffect(() => {
+    pa11yResult.issues?.forEach((issue) => {
+      document.querySelectorAll(issue.selector).forEach((element) => {
+        element.classList.add(styles.issue_warning)
+        console.warn(
+          `WCAG fail on guidline: ${issue.code}, Error: ${issue.message}`,
+          element
         )
-      })}
-    </section>
+      })
+    })
+  }, [pa11yResult])
+
+  return (
+    <>
+      {SHOW_HTML && (
+        <section className="wcag-issues">
+          <h2>Wcag issues</h2>
+          {pa11yResult.issues?.map((issue, index) => {
+            return (
+              <div key={index}>
+                <WcagIssues issue={issue} />
+              </div>
+            )
+          })}
+        </section>
+      )}
+    </>
   )
 }
 

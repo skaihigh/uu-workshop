@@ -26,11 +26,13 @@ function a11yPlugin(opts?: Options): PluginOption {
         ],
       })
 
-      server.ws.send({
-        type: 'custom',
-        event: 'pa11y:updated',
-        data: result,
-      })
+      if (result.issues.length > 0) {
+        server.ws.send({
+          type: 'custom',
+          event: 'pa11y:updated',
+          data: result,
+        })
+      }
     },
   }
 }
