@@ -6,7 +6,8 @@ import WcagViewer from './Wcag/WcagViewer'
 function App(): JSX.Element {
   return (
     <div className="App">
-      <WcagViewer />
+      {import.meta.env.MODE === 'development' && <WcagViewer />}
+
       <div>
         <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
           <img src="/vite.svg" className="logo" alt="Vite logo" />
