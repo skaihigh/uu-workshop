@@ -10,7 +10,7 @@ const envDir = path.resolve(__dirname, 'env')
  * @returns array
  */
 function a11yPlugin(opts?: Options): PluginOption[] {
-  console.log('Woop: ', process.env.VITE_PORT)
+  console.log('Woop: ', opts)
   pa11y(`http://localhost:${process.env.VITE_PORT}`, {
     rules: [
       //  "Principle1.Guideline1_3.1_3_1_AAA",
@@ -24,14 +24,18 @@ function a11yPlugin(opts?: Options): PluginOption[] {
 }
 
 export default ({ mode }) => {
-  Object.assign(process.env, loadEnv(mode, envDir, ''))
-  console.log('process.env.VITE_PORT', process.env.VITE_PORT)
-
-  return defineConfig({
-    plugins: [react(), a11yPlugin()],
-    envDir: 'env',
-    server: {
-      port: parseInt(process.env.VITE_PORT) || 3000,
-    },
-  })
+  if (mode !== 'production') {
+    Object.assign(process.env, loadEnv(mode, envDir, ''))
+    return defineConfig({
+      plugins: [react(), a11yPlugin(mode)],
+      envDir: 'env',
+      server: {
+        port: parseInt(process.env.VITE_PORT),
+      },
+    })
+  } else {
+    return defineConfig({
+      plugins: [react()],
+    })
+  }
 }
