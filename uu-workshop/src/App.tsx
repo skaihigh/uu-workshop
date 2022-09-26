@@ -7,7 +7,6 @@ function App(): JSX.Element {
   return (
     <div className="App">
       {import.meta.env.MODE === 'development' && <WcagViewer />}
-
       <div>
         <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
           <img src="/vite.svg" className="logo" alt="Vite logo" />
@@ -16,7 +15,7 @@ function App(): JSX.Element {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>Vite + React + Wcagers</h1>
+      <h1>Vite + React + Wcag</h1>
 
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more

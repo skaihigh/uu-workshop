@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import styles from './WcagViewer.module.scss'
 
 interface ResultIssue {
@@ -54,28 +54,23 @@ function WcagViewer(): JSX.Element {
   const [pa11yResult, setPa11yResult] = useState({} as Results)
   const SHOW_HTML = false
 
-  useEffect(() => {
-    if (import.meta.hot != null) {
-      import.meta.hot.on('pa11y:updated', (data: Results) => {
-        // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
-        if (data?.issues != null && data.issues.length > 0) {
-          setPa11yResult(data)
-        }
-      })
-    }
-  }, [])
-
-  useEffect(() => {
-    pa11yResult.issues?.forEach((issue) => {
-      document.querySelectorAll(issue.selector).forEach((element) => {
-        element.classList.add(styles.issue_warning)
-        console.warn(
-          `WCAG fail on guidline: ${issue.code}, Error: ${issue.message}`,
-          element
-        )
-      })
+  if (import.meta.hot != null) {
+    import.meta.hot.on('pa11y:updated', (data: Results) => {
+      // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+      if (data?.issues != null && data.issues.length > 0) {
+        data?.issues?.forEach((issue) => {
+          document.querySelectorAll(issue.selector).forEach((element) => {
+            element.classList.add(styles.issue_warning)
+            console.warn(
+              `WCAG fail on guidline: ${issue.code}, Error: ${issue.message}`,
+              element
+            )
+          })
+        })
+        setPa11yResult(data)
+      }
     })
-  }, [pa11yResult])
+  }
 
   return (
     <>
