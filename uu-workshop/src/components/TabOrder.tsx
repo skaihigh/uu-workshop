@@ -1,4 +1,3 @@
-import React from 'react'
 import './TabOrder.scss'
 
 export function TabOrder(): JSX.Element {

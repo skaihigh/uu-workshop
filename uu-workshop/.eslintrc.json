@@ -20,7 +20,9 @@
   "plugins": ["react", "@typescript-eslint"],
   "rules": {
     "prettier/prettier": "error",
-    "@typescript-eslint/explicit-function-return-type": "warn"
+    "@typescript-eslint/explicit-function-return-type": "warn",
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off"
   },
   "settings": {
     "react": {

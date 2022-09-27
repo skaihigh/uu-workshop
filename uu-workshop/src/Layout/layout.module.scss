@@ -1,0 +1,45 @@
+.header {
+  width: 100vw;
+  height: 10vh;
+  border-bottom: 1px solid chocolate;
+}
+
+.main {
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+
+  article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  section {
+    width: 80vw;
+    height: 80vh;
+    border: 1px solid chocolate;
+  }
+}
+
+.aside {
+  width: 20vw;
+  height: 80vh;
+  border-right: 1px solid chocolate;
+
+  nav {
+    display: flex;
+    height: initial;
+    flex-direction: column;
+
+    > a {
+      margin: 0.5rem;
+    }
+  }
+}
+
+.footer {
+  width: 100vw;
+  height: 10vh;
+  border-top: 1px solid chocolate;
+}

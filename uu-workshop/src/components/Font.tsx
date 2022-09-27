@@ -1,4 +1,3 @@
-import React from 'react'
 import './Font.scss'
 
 export function Font(): JSX.Element {

@@ -1,4 +1,3 @@
-import React from 'react'
 import './Focus.scss'
 
 export function Focus(): JSX.Element {
