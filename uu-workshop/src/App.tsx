@@ -2,7 +2,7 @@ import type { RouteObject } from 'react-router-dom'
 import { Outlet, Link, useRoutes } from 'react-router-dom'
 import { subRoutes } from './routes/subRoutes'
 // import WcagViewer from './Wcag/WcagViewer'
-import styles from './Layout/Layout.module.scss'
+import styles from './App.module.scss'
 
 export default function App(): JSX.Element {
   const routes: RouteObject[] = [
