@@ -7,16 +7,12 @@
     "node": ">=16.13.0",
     "npm": ">=8.1.0"
   },
-  "resolutions": {
-    "@types/react": "^18.7.21"
-  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
     "lint:scripts": "eslint --ext .ts,.tsx src",
-    "lint:styles": "stylelint \"src/**/*.css\"",
-    "preinstall": "npm install --package-lock-only --ignore-scripts && npx npm-force-resolutions"
+    "lint:styles": "stylelint \"src/**/*.css\""
   },
   "dependencies": {
     "@types/pa11y": "^5.3.4",
