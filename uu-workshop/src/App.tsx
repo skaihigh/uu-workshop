@@ -3,6 +3,7 @@ import { Outlet, Link, useRoutes } from 'react-router-dom'
 import { subRoutes } from './routes/subRoutes'
 // import WcagViewer from './Wcag/WcagViewer'
 import './app.scss'
+import { MenuItems } from './components/MenuItems'
 
 export default function App(): JSX.Element {
   const routes: RouteObject[] = [
@@ -27,19 +28,7 @@ function Layout(): JSX.Element {
       <main className="main">
         <aside className="aside">
           <nav aria-label="Sidemeny">
-            {subRoutes.map((route, index) => {
-              if (
-                route?.index === true ||
-                route?.path === '*' ||
-                route.path === undefined
-              )
-                return null
-              return (
-                <Link key={index} to={route.path}>
-                  {capitalizeString(route.path)}
-                </Link>
-              )
-            })}
+            <MenuItems subRoutes={subRoutes} />
           </nav>
           <nav aria-label="Workshop slides">...a list of slides ...</nav>
         </aside>
@@ -51,8 +40,4 @@ function Layout(): JSX.Element {
       {/* import.meta.env.MODE === 'development' && <WcagViewer /> */}
     </>
   )
-}
-
-function capitalizeString(s: string): string {
-  return (s.charAt(0).toUpperCase() + s.slice(1)).replace('/', '')
 }
