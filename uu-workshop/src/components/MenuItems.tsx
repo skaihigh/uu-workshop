@@ -13,7 +13,7 @@ export function MenuItems(props: { subRoutes: RouteObject[] }): JSX.Element {
         )
           return null
         return (
-          <Link key={index} to={route.path}>
+          <Link role="menuitem" key={index} to={route.path}>
             {capitalizeString(route.path)}
           </Link>
         )
