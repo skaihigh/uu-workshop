@@ -1,6 +1,6 @@
 import type { RouteObject } from 'react-router-dom'
 import { Outlet, Link, useRoutes } from 'react-router-dom'
-import { subRoutes } from './routes/subRoutes'
+import { slideRoutes, subRoutes } from './routes/subRoutes'
 
 import { MenuItems } from './components/MenuItems'
 import WcagViewer from './Wcag/WcagViewer'
@@ -13,7 +13,7 @@ export default function App(): JSX.Element {
     {
       path: '/',
       element: <Layout />,
-      children: subRoutes,
+      children: subRoutes.concat(slideRoutes),
     },
   ]
   return <>{useRoutes(routes)}</>
@@ -52,7 +52,7 @@ function Layout(): JSX.Element {
             Lysbilder
           </div>
           <nav role="menu" aria-label="secondary_menu">
-            <span role="menuitem">...a list of cool slides ...</span>
+            <MenuItems subRoutes={slideRoutes} />
           </nav>
         </aside>
         <section>

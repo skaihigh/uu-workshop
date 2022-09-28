@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import styles from './WcagViewer.module.scss'
 
 interface ResultIssue {
@@ -60,7 +60,7 @@ function WcagViewer(): JSX.Element {
       if (data?.issues != null && data.issues.length > 0) {
         data?.issues?.forEach((issue) => {
           document.querySelectorAll(issue.selector).forEach((element) => {
-            element.classList.add(styles.issue_warning)
+            element.classList.add(styles.issueWarning)
             console.warn(
               `WCAG fail on guidline: ${issue.code}, \n Error:  ${issue.message}`,
               element

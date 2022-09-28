@@ -1,5 +1,6 @@
 import { Link, RouteObject } from 'react-router-dom'
 import { Home, Sound, Colors, Form, TabOrder, Font } from '.'
+import { Statistics } from '../slides/Statistics'
 
 export const subRoutes: RouteObject[] = [
   { index: true, element: <Home /> },
@@ -25,6 +26,13 @@ export const subRoutes: RouteObject[] = [
     element: <Font />,
   },
   { path: '*', element: <NoMatch /> },
+]
+
+export const slideRoutes: RouteObject[] = [
+  {
+    path: '/statistikk',
+    element: <Statistics />,
+  },
 ]
 
 function NoMatch(): JSX.Element {
