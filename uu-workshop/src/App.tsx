@@ -1,9 +1,9 @@
 import type { RouteObject } from 'react-router-dom'
 import { Outlet, Link, useRoutes } from 'react-router-dom'
 import { subRoutes } from './routes/subRoutes'
-// import WcagViewer from './Wcag/WcagViewer'
 import './app.scss'
 import { MenuItems } from './components/MenuItems'
+import WcagViewer from './Wcag/WcagViewer'
 
 export default function App(): JSX.Element {
   const routes: RouteObject[] = [
@@ -27,17 +27,19 @@ function Layout(): JSX.Element {
       </header>
       <main className="main">
         <aside className="aside">
-          <nav aria-label="Sidemeny">
+          <div id="primary_menu" role="heading" aria-label="Eksempler"></div>
+          <nav aria-labelledby="primary_menu">
             <MenuItems subRoutes={subRoutes} />
           </nav>
-          <nav aria-label="Workshop slides">...a list of slides ...</nav>
+          <div id="secondary_menu" role="heading" aria-label="Slides"></div>
+          <nav aria-label="secondary_menu">...a list of cool slides ...</nav>
         </aside>
         <section>
           <Outlet />
         </section>
       </main>
       <footer className="footer">Footer</footer>
-      {/* import.meta.env.MODE === 'development' && <WcagViewer /> */}
+      {import.meta.env.MODE === 'development' && <WcagViewer />}
     </>
   )
 }

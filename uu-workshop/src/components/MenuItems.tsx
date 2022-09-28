@@ -23,5 +23,11 @@ export function MenuItems(props: { subRoutes: RouteObject[] }): JSX.Element {
 }
 
 function capitalizeString(s: string): string {
-  return (s.charAt(0).toUpperCase() + s.slice(1)).replace('/', '')
+  if (s.length < 2) {
+    return s
+  } else {
+    s = s.replace('/', '')
+  }
+
+  return s.charAt(0).toUpperCase() + s.slice(1)
 }

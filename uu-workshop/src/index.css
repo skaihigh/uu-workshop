@@ -3,8 +3,8 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  color: rgb(255 255 255 / 87%);
-  background-color: #242424;
+  color: #f3f3ff;
+  background-color: #0b0b0b;
   color-scheme: light dark;
   font-synthesis: none;
   text-rendering: optimizelegibility;
@@ -23,4 +23,10 @@ body {
   min-width: 320px;
   min-height: 100vh;
   margin: 0;
+}
+
+a {
+  min-height: 44px; /* WCAG 2.5.5: target size; */
+  line-height: 44px;
+  color: #f3f3ff; /*  WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17 */
 }
