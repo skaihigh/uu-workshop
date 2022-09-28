@@ -7,7 +7,7 @@ export function Statistics(): JSX.Element {
       <figure>
         <img
           width="500"
-          src="/src/assets/statistikk_feil.png"
+          src="/statistikk_feil.png"
           alt="stolpediagram som beskriver fordelingen av de vanligste feil på norske nettsider."
         />
         <figcaption>
