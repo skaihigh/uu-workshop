@@ -1,8 +1,8 @@
 .issue {
+  margin: 0;
   border: 1px solid #ccc;
   border-radius: 0.25rem;
   box-shadow: 0 0 0.5rem rgb(0 0 0 / 10%);
-  margin: 0;
 
   li {
     display: flex;
@@ -12,11 +12,11 @@
   }
 }
 
-.issue_warning {
+.issue-warning {
   border: 1px solid red;
 
   &::before {
-    content: '⚠️';
     margin-right: 0.5rem;
+    content: '⚠️';
   }
 }

@@ -1,5 +1,11 @@
 {
-	"editor.codeActionsOnSave": {
-	  "source.fixAll": true
-	}
-  }
+  "css.validate": false,
+  "scss.validate": false,
+
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.stylelint": true,
+    "source.fixAll": true
+  },
+  "files.autoSaveDelay": 500
+}
