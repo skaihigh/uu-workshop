@@ -29,6 +29,9 @@ function Layout(): JSX.Element {
           <Link title="Gå til forsiden" tabIndex={-1} to="/">
             Miles + W3C === &#34;sant&#34;
           </Link>
+          <blockquote lang="en">
+            “Nobody puts Baby in the corner” - Johnny Castle
+          </blockquote>
         </div>
         <nav>
           <Link title="Hvem er vi?" to="/">

@@ -20,12 +20,16 @@ export function Personas(): JSX.Element {
         color.
       </p>
 
-      <h3>
+      <h3 lang="no">
         <a href="https://www.w3.org/WAI/people-use-web/user-stories/#reporter">
           Alex, journalist med slitasjeskade
         </a>
       </h3>
-      <p>
+      <blockquote lang="nn">
+        I dag såg eg tvo månar, ein ny og ein gamal. Eg har stor tro på nymånen.
+        Men det er vel den gamle.
+      </blockquote>
+      <p lang="se">
         Alex has worked as a reporter for more than 20 years and has developed a
         repetitive strain injury that makes it painful to use a mouse and to
         type for extended periods of time. Though it took considerable research,

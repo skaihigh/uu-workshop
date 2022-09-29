@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { SiteSection, Toc } from '../components'
 import {
   Personas,
@@ -21,6 +22,11 @@ export function Slides(): JSX.Element {
       <Toc sectionNames={sectionNames} title="Naviger lysbilder" id="toc" />
       <h1>Lysbilder</h1>
       <SiteSection title="Forklaring" anchorName="explain">
+        <blockquote>
+          The World Wide Web Consortium (W3C) is an international community that
+          develops open standards to ensure the long-term growth of the Web.
+          <Link to="https://www.w3.org">W3C</Link>
+        </blockquote>
         <p>vi forklarer vi forklarer vi forklarer vi forklarer</p>
       </SiteSection>
       <SiteSection title="Personas" anchorName="personas">
