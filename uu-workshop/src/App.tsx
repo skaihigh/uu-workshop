@@ -50,6 +50,9 @@ function Layout(): JSX.Element {
       </main>
       <footer className="footer">
         <Footer />
+        <a href="#root" aria-label="naviger til toppen av siden">
+          Til topps
+        </a>
       </footer>
       {import.meta.env.MODE === 'development' && <WcagViewer />}
     </>

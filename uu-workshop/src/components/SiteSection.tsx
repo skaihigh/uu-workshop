@@ -14,8 +14,11 @@ export function SiteSection({
   return (
     <>
       <section>
-        <h2 id={anchorName}>{title}</h2>
-        {children}
+        <h2 id={anchorName}>{title}</h2>[
+        <a href="#toc" aria-label="Back to toc">
+          toc
+        </a>
+        ]{children}
       </section>
     </>
   )

@@ -18,7 +18,7 @@ export function Slides(): JSX.Element {
   ]
   return (
     <>
-      <Toc sectionNames={sectionNames} title="Naviger lysbilder" id="slides" />
+      <Toc sectionNames={sectionNames} title="Naviger lysbilder" id="toc" />
       <h1>Lysbilder</h1>
       <SiteSection title="Forklaring" anchorName="explain">
         <p>vi forklarer vi forklarer vi forklarer vi forklarer</p>
