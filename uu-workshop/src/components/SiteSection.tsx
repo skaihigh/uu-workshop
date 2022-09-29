@@ -1,3 +1,5 @@
+import './SiteSection.scss'
+
 export interface SiteSectionProps {
   title: string
   children: React.ReactNode
