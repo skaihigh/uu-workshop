@@ -7,7 +7,7 @@ export function SkipLinks(): JSX.Element {
     <>
       <ul className="skiplist">
         <li className="skip">
-          <a href="#content">Hopp over navigasjons meny.</a>
+          <a href="#toc">Hopp til dokumentnavigasjon.</a>
         </li>
         <li className="skip">
           <a href="#footerlinks">Hopp til ressurslenker i footer.</a>

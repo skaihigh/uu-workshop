@@ -11,6 +11,7 @@ export default function App(): JSX.Element {
   const routes: RouteObject[] = [
     {
       path: '/',
+
       element: <Layout />,
       children: subRoutes,
     },
@@ -30,6 +31,9 @@ function Layout(): JSX.Element {
           </Link>
         </div>
         <nav>
+          <Link title="Hvem er vi?" to="/">
+            De tre musketerer
+          </Link>
           <Link title="Eksempler" to="/eksempler">
             Eksempler
           </Link>
@@ -42,26 +46,6 @@ function Layout(): JSX.Element {
         </nav>
       </header>
       <main className="main">
-        {/*
-          https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA12 }
-          <aside className="aside">
-          <div
-            id="primary_menu"
-            aria-level={1}
-            role="heading"
-            aria-label="Eksempler"
-          >
-          
-            Eksempler
-          </div>
-        </aside>
-      
-      */}
-        <p className="skip">
-          <a title="Hovedinnhold" href="#content" id="content">
-            Slides og Eksempler.
-          </a>
-        </p>
         <Outlet />
       </main>
       <footer className="footer">

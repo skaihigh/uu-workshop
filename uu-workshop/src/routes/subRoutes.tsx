@@ -1,9 +1,8 @@
 import { Link, RouteObject } from 'react-router-dom'
-import { Examples, Slides, Tasks } from '.'
+import { Examples, Slides, Tasks, WhoWeAre } from '.'
 
 export const subRoutes: RouteObject[] = [
   {
-    index: true,
     path: '/eksempler',
     element: <Examples />,
   },
@@ -14,6 +13,10 @@ export const subRoutes: RouteObject[] = [
   {
     path: '/oppgaver',
     element: <Tasks />,
+  },
+  {
+    index: true,
+    element: <WhoWeAre />,
   },
 
   { path: '*', element: <NoMatch /> },
