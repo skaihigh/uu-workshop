@@ -14,9 +14,7 @@ export function SiteSection({
   return (
     <>
       <section>
-        <a id={anchorName} href={`#${anchorName}`} title={title}>
-          <h2>{title}</h2>
-        </a>
+        <h2 id={anchorName}>{title}</h2>
         {children}
       </section>
     </>
