@@ -55,14 +55,12 @@ function Layout(): JSX.Element {
             <MenuItems subRoutes={slideRoutes} />
           </nav>
         </aside>
-        <section>
-          <p className="skip">
-            <a title="Hovedinnhold" href="#content" id="content">
-              Slides og Eksempler.
-            </a>
-          </p>
-          <Outlet />
-        </section>
+        <p className="skip">
+          <a title="Hovedinnhold" href="#content" id="content">
+            Slides og Eksempler.
+          </a>
+        </p>
+        <Outlet />
       </main>
       <footer className="footer">
         <Footer />
