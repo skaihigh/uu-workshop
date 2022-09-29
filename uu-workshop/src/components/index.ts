@@ -3,3 +3,6 @@ export * from './Focus'
 export * from './Font'
 export * from './Input'
 export * from './TabOrder'
+
+export * from './SiteSection'
+export * from './Toc'

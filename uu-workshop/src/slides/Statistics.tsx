@@ -2,7 +2,6 @@ import './Slides.scss'
 export function Statistics(): JSX.Element {
   return (
     <section>
-      <h1>Statistikk</h1>
       <p>Bla bla bla har ansvar for tilsyn osv osv</p>
       <figure>
         <img

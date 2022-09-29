@@ -1,8 +1,7 @@
 import type { RouteObject } from 'react-router-dom'
 import { Outlet, Link, useRoutes } from 'react-router-dom'
-import { slideRoutes, subRoutes } from './routes/subRoutes'
+import { subRoutes } from './routes/subRoutes'
 
-import { MenuItems } from './components/MenuItems'
 import WcagViewer from './Wcag/WcagViewer'
 import { Footer } from './components/Footer'
 import { SkipLinks } from './components/SkipLinks'
@@ -13,7 +12,7 @@ export default function App(): JSX.Element {
     {
       path: '/',
       element: <Layout />,
-      children: subRoutes.concat(slideRoutes),
+      children: subRoutes,
     },
   ]
   return <>{useRoutes(routes)}</>
@@ -25,36 +24,39 @@ function Layout(): JSX.Element {
       <SkipLinks />
       <header className="header">
         {/* https://www.w3.org/WAI/standards-guidelines/wcag/conformance-logos/ */}
-        <Link title="Gå til forsiden" role="banner" to="/">
-          Miles + W3C === &#34;sant&#34;
-        </Link>
+        <div role="banner">
+          <Link title="Gå til forsiden" tabIndex={-1} to="/">
+            Miles + W3C === &#34;sant&#34;
+          </Link>
+        </div>
+        <nav>
+          <Link title="Eksempler" to="/eksempler">
+            Eksempler
+          </Link>
+          <Link title="Lysbilder" to="/lysbilder">
+            Lysbilder
+          </Link>
+          <Link title="Oppgaver" to="/oppgaver">
+            Oppgaver
+          </Link>
+        </nav>
       </header>
       <main className="main">
-        <aside className="aside">
+        {/*
+          https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA12 }
+          <aside className="aside">
           <div
             id="primary_menu"
             aria-level={1}
             role="heading"
             aria-label="Eksempler"
           >
-            {/* https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA12  */}
+          
             Eksempler
           </div>
-          <nav role="menu" aria-labelledby="primary_menu">
-            <MenuItems subRoutes={subRoutes} />
-          </nav>
-          <div
-            id="secondary_menu"
-            aria-level={1}
-            role="heading"
-            aria-label="Slides"
-          >
-            Lysbilder
-          </div>
-          <nav role="menu" aria-label="secondary_menu">
-            <MenuItems subRoutes={slideRoutes} />
-          </nav>
         </aside>
+      
+      */}
         <p className="skip">
           <a title="Hovedinnhold" href="#content" id="content">
             Slides og Eksempler.

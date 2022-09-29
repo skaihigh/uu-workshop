@@ -1,0 +1,6 @@
+export * from './Personas'
+export * from './Statistics'
+export * from './Techniques'
+export * from './TheLaw'
+export * from './TheStandard'
+export * from './Tools'

@@ -1,0 +1,16 @@
+nav {
+  p[aria-label] {
+    border-bottom: 1px solid #ccc;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+      margin: 0;
+      padding: 0;
+    }
+  }
+}

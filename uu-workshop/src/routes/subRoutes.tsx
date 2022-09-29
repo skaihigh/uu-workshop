@@ -1,46 +1,33 @@
 import { Link, RouteObject } from 'react-router-dom'
-import { Home, Sound, Colors, Form, TabOrder, Font } from '.'
-import { Statistics } from '../slides/Statistics'
+import { Examples, Slides, Tasks } from '.'
 
 export const subRoutes: RouteObject[] = [
-  { index: true, element: <Home /> },
   {
-    path: '/lyd',
-    element: <Sound />,
+    index: true,
+    path: '/eksempler',
+    element: <Examples />,
   },
   {
-    path: '/farger',
-    element: <Colors />,
+    path: '/lysbilder',
+    element: <Slides />,
   },
   {
-    path: '/skjema',
-    element: <Form />,
+    path: '/oppgaver',
+    element: <Tasks />,
   },
 
-  {
-    path: '/tabrekkefølge',
-    element: <TabOrder />,
-  },
-  {
-    path: '/skrift',
-    element: <Font />,
-  },
   { path: '*', element: <NoMatch /> },
-]
-
-export const slideRoutes: RouteObject[] = [
-  {
-    path: '/statistikk',
-    element: <Statistics />,
-  },
 ]
 
 function NoMatch(): JSX.Element {
   return (
     <div>
-      <h2>It looks like you are lost lost...</h2>
+      <h2>Nei, men stakars... Har du gått deg bort du da?</h2>
+
       <p>
-        <Link to="/">Go to the home page</Link>
+        Det kan ha vært dårlig skilta, høl i veien eller rett og slett uflaks,
+        men bli med her du så skal jeg hjelpe deg med
+        <Link to="/">å finne hjem</Link>
       </p>
     </div>
   )
