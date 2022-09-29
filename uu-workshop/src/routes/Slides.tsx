@@ -24,7 +24,8 @@ export function Slides(): JSX.Element {
       <SiteSection title="Forklaring" anchorName="explain">
         <blockquote>
           The World Wide Web Consortium (W3C) is an international community that
-          develops open standards to ensure the long-term growth of the Web.
+          develops open standards to ensure the <em>long-term</em> growth of the
+          Web.
           <Link to="https://www.w3.org">W3C</Link>
         </blockquote>
         <p>vi forklarer vi forklarer vi forklarer vi forklarer</p>

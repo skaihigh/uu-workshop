@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 export function Tools(): JSX.Element {
   return (
     <>
@@ -17,14 +19,28 @@ export function Tools(): JSX.Element {
         enkeltregler med direkte referanse til W3C sine
         <span lang="en">guidelines</span>.
       </p>
+      <p>
+        Vi har laget et ydmykt forslag til hvordan dette kan kan integreres i
+        React med Vite i Code.
+        <Link to="https://github.com/skaihigh/uu-workshop/blob/main/uu-workshop/vite.config.ts">
+          Kodeeksempel på Vite konfigurasjon [Github]
+        </Link>
+      </p>
       <h3>
         <a
           href="https://wave.webaim.org/extension/"
           title="Wave chrome extention"
         >
-          Wave
+          WAVE Web Accessibility Evaluation Tool
         </a>
       </h3>
+      <p>
+        En samling valideringsverktøy fra WebAIM. Kommer både som standalone,
+        webservice og som nettleserutvidelser. Api-tjenestene koster penger, men
+        nettleserutvidelsen er gratis og kan enkelt integreres i arbeidsflyten
+        til både utvikler, prosjektleder eller andre personer med både teknisk
+        og ikke-teknisk backgrunn.
+      </p>
       <h3>
         <a
           href="https://developer.chrome.com/docs/lighthouse/overview"
