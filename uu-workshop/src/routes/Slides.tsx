@@ -1,4 +1,4 @@
-import { SiteSection } from '../components'
+import { SiteSection, Toc } from '../components'
 import {
   Personas,
   Statistics,
@@ -9,9 +9,17 @@ import {
 } from '../slides'
 
 export function Slides(): JSX.Element {
+  const sectionNames = [
+    ['Personas', 'personas'],
+    ['Statistikk', 'statistics'],
+    ['Teknikker', 'techniques'],
+    ['Standarden', 'thestandard'],
+    ['Verktøy', 'tools'],
+  ]
   return (
     <>
       <h1>Lysbilder</h1>
+      <Toc sectionNames={sectionNames} title="Naviger lysbilder" id="slides" />
       <SiteSection title="Personas" anchorName="personas">
         <Personas />
       </SiteSection>
