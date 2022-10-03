@@ -1,3 +1,15 @@
 section {
   min-height: 200vh;
+
+  a[href='#toc'] {
+    display: block;
+
+    &:before {
+      content: '[ ';
+    }
+
+    &:after {
+      content: ' ]';
+    }
+  }
 }

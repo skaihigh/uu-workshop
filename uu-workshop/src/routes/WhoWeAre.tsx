@@ -18,7 +18,7 @@ export function WhoWeAre(): JSX.Element {
   return (
     <>
       <Toc sectionNames={sectionNames} title="Naviger oss" id="toc" />
-      <h1>Om oss</h1>
+      <h1 id="maincontent">Om oss</h1>
       <SiteSection title="Forklaring" anchorName="explain">
         <p>vi forklarer vi forklarer vi forklarer vi forklarer</p>
       </SiteSection>
@@ -33,6 +33,19 @@ export function WhoWeAre(): JSX.Element {
       <SiteSection title="Christian" anchorName="christian">
         <p>Christian badambish!</p>
         <img src={ImgUrls.christian} alt="Bilde av Christian" />
+        <p className="visuallyhidden">
+          Når Christian ikke koder driver han blant annet med:
+        </p>
+        <ul className="visuallyhidden">
+          <li>Spiller slagverk i to korps.</li>
+          <li>Spiller på modularsynthen sin.</li>
+          <li>Bygger synthmoduler til modularsynthen sin.</li>
+          <li>Brygger øl.</li>
+          <li>Lager mat.</li>
+          <li>Danser lindyhop</li>
+          <li>Gror tomater og chilli i drivhus.</li>
+          <li>Pusser opp huset i Saksvik.</li>
+        </ul>
       </SiteSection>
     </>
   )

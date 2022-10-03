@@ -12,6 +12,9 @@ export function SkipLinks(): JSX.Element {
         <li className="skip">
           <a href="#footerlinks">Hopp til ressurslenker i footer.</a>
         </li>
+        <li className="skip">
+          <a href="#maincontent">Hopp til hovedartikkel.</a>
+        </li>
       </ul>
     </>
   )

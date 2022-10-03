@@ -5,7 +5,9 @@ import { subRoutes } from './routes/subRoutes'
 import WcagViewer from './Wcag/WcagViewer'
 import { Footer } from './components/Footer'
 import { SkipLinks } from './components/SkipLinks'
+import { Toggle } from './components/'
 import './app.scss'
+import { useState } from 'react'
 
 export default function App(): JSX.Element {
   const routes: RouteObject[] = [
@@ -20,10 +22,12 @@ export default function App(): JSX.Element {
 }
 
 function Layout(): JSX.Element {
+  const [visualMode, setVisualMode] = useState(false)
+
   return (
     <>
       <SkipLinks />
-      <header className="header">
+      <header className={`header ${visualMode ? 'visuallyhidden' : ''}`}>
         {/* https://www.w3.org/WAI/standards-guidelines/wcag/conformance-logos/ */}
         <div role="banner">
           <Link title="Gå til forsiden" tabIndex={-1} to="/">
@@ -48,15 +52,25 @@ function Layout(): JSX.Element {
           </Link>
         </nav>
       </header>
-      <main className="main">
+      {/* visuallyhidden */}
+      <main className={`main ${visualMode ? 'visuallyhidden' : ''}`} id="main">
         <Outlet />
       </main>
-      <footer className="footer">
+      <footer className={`footer ${visualMode ? 'visuallyhidden' : ''}`}>
         <Footer />
+      </footer>
+      <div className="footerAddons">
         <a href="#root" aria-label="naviger til toppen av siden">
           Til topps
         </a>
-      </footer>
+        <Toggle
+          label="blind modus"
+          checked={false}
+          onChange={() => {
+            setVisualMode(!visualMode)
+          }}
+        />
+      </div>
       {import.meta.env.MODE === 'development' && <WcagViewer />}
     </>
   )

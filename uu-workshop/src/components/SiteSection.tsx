@@ -14,11 +14,11 @@ export function SiteSection({
   return (
     <>
       <section>
-        <h2 id={anchorName}>{title}</h2>[
-        <a href="#toc" aria-label="Back to toc">
+        <h2 id={anchorName}>{title}</h2>
+        {children}
+        <a href="#toc" aria-label="Gå tilbake til innholdsfortegnelsen.">
           toc
         </a>
-        ]{children}
       </section>
     </>
   )

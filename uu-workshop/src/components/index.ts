@@ -6,3 +6,5 @@ export * from './TabOrder'
 
 export * from './SiteSection'
 export * from './Toc'
+
+export * from './Toggle/Toggle'

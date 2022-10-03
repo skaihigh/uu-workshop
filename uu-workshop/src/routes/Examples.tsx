@@ -19,7 +19,7 @@ export function Examples(): JSX.Element {
   return (
     <>
       <Toc sectionNames={sectionNames} title="Naviger eksempler" id="toc" />
-      <h1>Eksempler</h1>
+      <h1 id="maincontent">Eksempler</h1>
       <SiteSection title="Forklaring" anchorName="explain">
         <p>vi forklarer vi forklarer vi forklarer vi forklarer</p>
       </SiteSection>

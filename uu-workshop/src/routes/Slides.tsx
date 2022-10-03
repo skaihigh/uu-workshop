@@ -20,14 +20,14 @@ export function Slides(): JSX.Element {
   return (
     <>
       <Toc sectionNames={sectionNames} title="Naviger lysbilder" id="toc" />
-      <h1>Lysbilder</h1>
+      <h1 id="maincontent">Lysbilder</h1>
       <SiteSection title="Forklaring" anchorName="explain">
-        <blockquote>
+        <blockquote lang="en-GB">
           The World Wide Web Consortium (W3C) is an international community that
-          develops open standards to ensure the <em>long-term</em> growth of the
-          Web.
-          <Link to="https://www.w3.org">W3C</Link>
+          develops open standards to ensure the long-term growth of the Web.
         </blockquote>
+        <p lang="fr">Sauf pour ce qui est écrit en mauvais français.</p>
+        <Link to="https://www.w3.org">W3C</Link>
         <p>vi forklarer vi forklarer vi forklarer vi forklarer</p>
       </SiteSection>
       <SiteSection title="Personas" anchorName="personas">

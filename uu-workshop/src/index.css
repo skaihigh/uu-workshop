@@ -17,3 +17,14 @@ a {
   line-height: 44px;
   color: #f3f3ff; /*  WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17 */
 }
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
