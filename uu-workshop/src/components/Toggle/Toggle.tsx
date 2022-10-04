@@ -1,6 +1,8 @@
 import React, { DetailedHTMLProps, InputHTMLAttributes } from 'react'
 import './Toggle.scss'
 
+// https://www.robinwieruch.de/react-web-components/
+
 interface ToggleProps {
   id?: string
   label: string
