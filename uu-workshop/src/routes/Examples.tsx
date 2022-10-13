@@ -5,6 +5,7 @@ import {
   Input,
   TabOrder,
   Focus,
+  Graphics
 } from '../components'
 import { Toc } from '../components/Toc'
 export function Examples(): JSX.Element {
@@ -14,6 +15,7 @@ export function Examples(): JSX.Element {
     ['Skjema', 'input'],
     ['Rekkefølge på elementer', 'taborder'],
     ['Fokus', 'focus'],
+    ['Grafikk og bilder', 'graphics'],
   ]
 
   return (
@@ -41,6 +43,10 @@ export function Examples(): JSX.Element {
 
       <SiteSection title="Fokus" anchorName="focus">
         <Focus />
+      </SiteSection>
+
+      <SiteSection title="Grafikk og bilder" anchorName="graphics">
+        <Graphics />
       </SiteSection>
     </>
   )

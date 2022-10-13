@@ -1,4 +1,64 @@
 .colors {
-  color: rgb(0 0 0);
-  background-color: rgb(56 56 56);
+  > div {
+    margin-bottom: 2rem;
+  }
+
+  &__low-contrast {
+    color: rgb(255, 255, 255);
+    background-color: rgb(211, 211, 211);
+    border-radius: 10px;
+    padding: 1rem;
+  }
+
+  &__too-many {
+    display: flex;
+
+    div {
+      padding: 0.4rem;
+    }
+
+    div:nth-child(1) {
+      background-color: red;
+      color: #fff;
+    }
+
+    div:nth-child(2) {
+      background-color: green;
+      color: #fff;
+    }
+
+    div:nth-child(3) {
+      background-color: orange;
+      color: #fff;
+    }
+
+    div:nth-child(4) {
+      background-color: blue;
+      color: #fff;
+    }
+
+    div:nth-child(5) {
+      background-color: purple;
+      color: #fff;
+    }
+  }
+
+  &__not-many {
+    color: red;
+  }
+
+  &__dark-mode {
+    background-color: #000;
+    color: #fff;
+    border-radius: 10px;
+    padding: 1rem;
+
+    a:focus-visible {
+      outline-color: blue;
+    }
+    
+    &--smaller {
+      font-size: 0.8rem;
+    }
+  }
 }
