@@ -59,7 +59,7 @@ function Layout(): JSX.Element {
       <footer className={`footer ${visualMode ? 'visuallyhidden' : ''}`}>
         <Footer />
       </footer>
-      <div className="footerAddons">
+      <div className="footer-addons">
         <a href="#root" aria-label="naviger til toppen av siden">
           Til topps
         </a>

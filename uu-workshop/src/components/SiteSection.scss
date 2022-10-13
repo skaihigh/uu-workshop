@@ -4,11 +4,11 @@ section {
   a[href='#toc'] {
     display: block;
 
-    &:before {
+    &::before {
       content: '[ ';
     }
 
-    &:after {
+    &::after {
       content: ' ]';
     }
   }

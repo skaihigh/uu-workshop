@@ -12,7 +12,7 @@ export function Examples(): JSX.Element {
     ['Farger', 'colors'],
     ['Skrift', 'font'],
     ['Skjema', 'input'],
-    ['[Tab]-rekkefølge', 'taborder'],
+    ['Rekkefølge på elementer', 'taborder'],
     ['Fokus', 'focus'],
   ]
 
@@ -35,7 +35,7 @@ export function Examples(): JSX.Element {
         <Input />
       </SiteSection>
 
-      <SiteSection title="[Tab]-rekkefølge" anchorName="taborder">
+      <SiteSection title="Rekkefølge på elementer" anchorName="taborder">
         <TabOrder />
       </SiteSection>
 
