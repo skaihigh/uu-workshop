@@ -4,14 +4,14 @@ export function ScreenReader(): JSX.Element {
   return (
     <>
       <p>
-        Bruk den innebygde skjermleseren i MacOs eller{' '}
-        <Link
+        Bruk den innebygde skjermleseren i MacOs eller Windows.
+        {/* <Link
           to="https://www.nvaccess.org/download/"
           title="Last ned NVaccess skjermleser"
         >
           NVaccess
         </Link>
-        skjermleseren for windows.
+        skjermleseren for windows. */}
       </p>
       <p>
         Naviger til{' '}

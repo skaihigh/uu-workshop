@@ -1,11 +1,13 @@
 import {
-  SiteSection,
   Colors,
-  Font,
-  Input,
-  TabOrder,
+  EnoughIsEnough,
   Focus,
-  Graphics
+  Font,
+  GoodVsBad,
+  Graphics,
+  Input,
+  SiteSection,
+  TabOrder,
 } from '../components'
 import { Toc } from '../components/Toc'
 export function Examples(): JSX.Element {
@@ -16,6 +18,8 @@ export function Examples(): JSX.Element {
     ['Rekkefølge på elementer', 'taborder'],
     ['Fokus', 'focus'],
     ['Grafikk og bilder', 'graphics'],
+    ['The good, the bad and the W3C compliant', 'good-vs-bad'],
+    ['Nok er nok', 'enough-is-enough'],
   ]
 
   return (
@@ -47,6 +51,17 @@ export function Examples(): JSX.Element {
 
       <SiteSection title="Grafikk og bilder" anchorName="graphics">
         <Graphics />
+      </SiteSection>
+
+      <SiteSection
+        title="The good, the bad and the W3C compliant"
+        anchorName="good-vs-bad"
+      >
+        <GoodVsBad />
+      </SiteSection>
+
+      <SiteSection title="Nok er nok" anchorName="enough-is-enough">
+        <EnoughIsEnough />
       </SiteSection>
     </>
   )

@@ -66,13 +66,20 @@ export function Tools(): JSX.Element {
           Axe DevTools
         </a>
       </h3>
-      <p></p>
       <h3>
         <a
           href="https://support.apple.com/no-no/guide/voiceover/vo27974/mac"
           title="Bruk VoiceOver til å lese nettsider på Mac"
         >
           Bruk VoiceOver til å lese nettsider på Mac
+        </a>
+      </h3>
+      <h3>
+        <a
+          href="https://support.microsoft.com/nb-no/windows/komplett-veiledning-for-skjermleser-e4397a0d-ef4f-b386-d8ae-c172f109bdb1"
+          title="Bruk Narrator til å lese nettsider på PC"
+        >
+          Bruk Narrator til å lese nettsider på PC
         </a>
       </h3>
       <p>Det finnes flere måter du kan navigere i nettsider på.</p>

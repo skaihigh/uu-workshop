@@ -1,6 +1,16 @@
 .input {
-  padding: 8px;
-  font-size: 16px;
+  padding: 0.8rem;
+  font-size: 1rem;
+
+  div {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  input {
+    outline: none;
+  }
+
 
   /* temp style */
   // border: 1px solid #ccc;
