@@ -5,7 +5,7 @@ import './GoodVsBad.scss'
 
 function Image(props: { src: string, alt?: string }): JSX.Element {
   const { src, alt } = props;
-  return <img src={`/public/images/${src}`} alt={alt} />;
+  return <img src={`/images/${src}`} alt={alt} />;
 }
 
 function LabelAndInput(props: { id: string, htmlFor?: string, labelText: string }): JSX.Element {
