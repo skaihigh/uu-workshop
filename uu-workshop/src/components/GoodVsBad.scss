@@ -27,6 +27,7 @@
 
     legend {
         padding: 0;
+        color: #000;
     }
 
     img {
@@ -74,10 +75,6 @@
         font-size: 1.8rem;
     }
 
-    label {
-        color: #000;
-    }
-
     input {
         width: 100%;
         color: #000;
@@ -91,6 +88,12 @@
 
         h3 {
             font-size: 2rem;
+        }
+    }
+
+    .label-and-input {
+        & > label, & > div {
+            color: #000;
         }
     }
 }

@@ -25,35 +25,46 @@ export function Colors(): JSX.Element {
       <div className="colors__panels__panel colors__panels__panel--dark-mode">
         Mange (nerder) liker 'dark mode', og hvis sort-på-hvit gir nok kontrast, gjør vel hvit-på-sort også det?
         <br />
+        <br />
         <a href="#">Her er et link med standard blåfarge, kan du se det?</a>
         <br />
-        Visste du at folk med dysleksi generelt syns det er lettere å lese mørk tekst mot lys bakgrunn?
+        <br />
+        Denne fargekontrasten vil ikke feile i accessibility-tester.
+        <br />
+        <br />
+        Visste du at folk med dysleksi generelt syns det er vanskeligere å lese lys tekst mot mørk bakgrunn?
       </div>
 
       <div className="colors__panels__panel colors__panels__panel--light-mode">
-        Mange (nerder) liker 'dark mode', og hvis sort-på-hvit gir nok kontrast, gjør vel hvit-på-sort også det?
+        Denne teksten er (kanskje) lettere å lese, men har for lav kontrast mot bakgrunnen og vil feile i accessibility-test.
+        <br />
         <br />
         <a href="#">Her er et link med standard blåfarge, kan du se det?</a>
-        <br />
-        Visste du at folk med dysleksi generelt syns det er lettere å lese mørk tekst mot lys bakgrunn?
       </div>
     </div>
 
     <div className="colors__too-many">
-      <div>Mer</div>
+      <div>Flere</div>
+      <div>farger</div>
+      <div>gjør</div>
+      <div>web</div>
+      <div>mer</div>
       <div>festlig</div>
-      <div>med</div>
-      <div>mange</div>
-      <div>farger?</div>
+      <div>?</div>
     </div>
 
     <div className="colors__not-many">
-      Mye lettere å lese når det bare er én farge?
+      <div>Det er kanskje lettest å lese teksten når den bare har én farge?</div>
+      <div>
+        For en med rød/grønn-fargeblindhet, vil den røde teksten se ca. sånn ut. 
+        {/* https://www.color-blindness.com/coblis-color-blindness-simulator/ */}
+      </div>
+      <div>Spiller det noen rolle hvilken farge teksten har?</div>
     </div>
 
 
     <div className="colors__dark-and-smaller">
-      Dette er en vanlig skriftstørrelse. Lett å lese?
+      Eller hvor stor den er? Dette er en vanlig skriftstørrelse. Hverken størrelse eller fargekontrast vil feile i a11y-test - men er det brukervennlig?
     </div>
     
   </div>)

@@ -36,6 +36,8 @@
 
       &--light-mode {
         border: 1px solid #ccc;
+        background-color: #fff;
+        color: #777;
       }
     }
 
@@ -73,16 +75,31 @@
       color: #fff;
       background-color: purple;
     }
+
+    div:nth-child(6) {
+      color: #fff;
+      background-color: darkcyan;
+    }
   }
 
   &__not-many {
-    color: red;
+    div:nth-child(1) {
+      color: red;
+    }
+
+    div:nth-child(2) {
+      color: rgb(116, 51, 51);
+    }
+
+    div:nth-child(3) {
+      color: blue;
+    }
   }
 
   &__dark-and-smaller {
     background-color: #000;
     font-size: 0.8rem;
-    color: #fff;
+    color: #999;
   }
 
 }

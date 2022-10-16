@@ -19,7 +19,7 @@ export function Examples(): JSX.Element {
     ['Fokus', 'focus'],
     ['Grafikk og bilder', 'graphics'],
     ['The good, the bad and the W3C compliant', 'good-vs-bad'],
-    ['Nok er nok', 'enough-is-enough'],
+    ['Nok er nok?', 'enough-is-enough'],
   ]
 
   return (
@@ -60,7 +60,7 @@ export function Examples(): JSX.Element {
         <GoodVsBad />
       </SiteSection>
 
-      <SiteSection title="Nok er nok" anchorName="enough-is-enough">
+      <SiteSection title="Nok er nok?" anchorName="enough-is-enough">
         <EnoughIsEnough />
       </SiteSection>
     </>
