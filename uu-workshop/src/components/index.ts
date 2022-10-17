@@ -6,6 +6,7 @@ export * from './GoodVsBad'
 export * from './Graphics'
 export * from './Input'
 export * from './TabOrder'
+export * from './TrappedByKeyboard'
 
 export * from './SiteSection'
 export * from './Toc'

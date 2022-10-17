@@ -5,11 +5,11 @@ export function UserNotification(): JSX.Element {
   const [busy, setBusy] = useState(false)
   const buttonHandler: React.MouseEventHandler<HTMLButtonElement> = () => {
     setNotification(
-      'Du har bedt om varsling. Venligst vent mens vi behandler din forespørsel.'
+      'Du har bedt om varsling. Vennligst vent mens vi behandler din forespørsel.'
     )
     setBusy(true)
     setTimeout(() => {
-      setNotification('Du har fått en ny melding; "Hei, hvordan går det?"')
+      setNotification('Du har fått en ny melding: "Hei, hvordan går det?"')
       setBusy(false)
     }, 10000)
   }

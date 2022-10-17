@@ -8,6 +8,7 @@ import {
   Input,
   SiteSection,
   TabOrder,
+  TrappedByKeyboard
 } from '../components'
 import { Toc } from '../components/Toc'
 export function Examples(): JSX.Element {
@@ -16,6 +17,7 @@ export function Examples(): JSX.Element {
     ['Skrift', 'font'],
     ['Skjema', 'input'],
     ['Rekkefølge på elementer', 'taborder'],
+    ['Trapped by keyboard', 'trapped-by-keyboard'],
     ['Fokus', 'focus'],
     ['Grafikk og bilder', 'graphics'],
     ['The good, the bad and the W3C compliant', 'good-vs-bad'],
@@ -43,6 +45,10 @@ export function Examples(): JSX.Element {
 
       <SiteSection title="Rekkefølge på elementer" anchorName="taborder">
         <TabOrder />
+      </SiteSection>
+
+      <SiteSection title="Trapped by keyboard" anchorName="trapped-by-keyboard">
+        <TrappedByKeyboard />
       </SiteSection>
 
       <SiteSection title="Fokus" anchorName="focus">
