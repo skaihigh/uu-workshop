@@ -1,0 +1,55 @@
+.a11y-for-all {
+  ul {
+    flex-direction: column;
+  }
+
+  li {
+    margin-bottom: 2rem;
+  }
+
+  a {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  pre {
+    white-space: break-spaces;
+
+    ul {
+      padding: 1rem;
+
+      li {
+        padding-left: 0.5rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        margin-left: 1rem;
+        list-style-type: disc;
+      }
+    }
+  }
+
+  .white {
+    color: #000;
+    background-color: #fff;
+  }
+
+  .error-message {
+    font-style: italic;
+    color: red;
+  }
+
+  .info-message {
+    font-style: italic;
+    color: #eee;
+  }
+
+  .input-error {
+    color: #000;
+    background-color: #fff;
+    border: 2px solid red;
+  }
+}
+
+.writing-for-all {
+  
+}

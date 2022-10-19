@@ -1,5 +1,7 @@
 import {
   Colors,
+  DesigningForAll,
+  DevelopingForAll,
   EnoughIsEnough,
   Focus,
   Font,
@@ -8,11 +10,16 @@ import {
   Input,
   SiteSection,
   TabOrder,
-  TrappedByKeyboard
+  Toc,
+  TrappedByKeyboard,
+  WritingForAll,
 } from '../components'
-import { Toc } from '../components/Toc'
+
 export function Examples(): JSX.Element {
   const sectionNames = [
+    ['Å skrive for alle', 'writing-for-all'],
+    ['Å designe for alle', 'designing-for-all'],
+    ['Å utvikle for alle', 'developing-for-all'],
     ['Farger', 'colors'],
     ['Skrift', 'font'],
     ['Skjema', 'input'],
@@ -31,6 +38,19 @@ export function Examples(): JSX.Element {
       <SiteSection title="Forklaring" anchorName="explain">
         <p>vi forklarer vi forklarer vi forklarer vi forklarer</p>
       </SiteSection>
+
+      <SiteSection title="Å skrive for alle" anchorName="writing-for-all">
+        <WritingForAll />
+      </SiteSection>
+
+      <SiteSection title="Å designe for alle" anchorName="designing-for-all">
+        <DesigningForAll />
+      </SiteSection>
+
+      <SiteSection title="Å utvikle for alle" anchorName="developing-for-all">
+        <DevelopingForAll />
+      </SiteSection>
+
       <SiteSection title="Farger" anchorName="colors">
         <Colors />
       </SiteSection>

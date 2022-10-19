@@ -7,16 +7,16 @@
     display: flex;
     flex-flow: wrap;
 
-    &__panel {
-      padding: 1rem;
-      border-radius: 10px;  
+    &__panel {  
       flex: 1;
+      padding: 1rem;
       margin-right: 1rem;
       margin-bottom: 1rem;
+      border-radius: 10px;
 
       a {
-        line-height: initial;
         min-height: auto;
+        line-height: initial;
         color: blue;
       }
  
@@ -35,9 +35,9 @@
       }
 
       &--light-mode {
-        border: 1px solid #ccc;
-        background-color: #fff;
         color: #777;
+        background-color: #fff;
+        border: 1px solid #ccc;
       }
     }
 
@@ -88,7 +88,7 @@
     }
 
     div:nth-child(2) {
-      color: rgb(116, 51, 51);
+      color: rgb(116 51 51);
     }
 
     div:nth-child(3) {
@@ -97,9 +97,9 @@
   }
 
   &__dark-and-smaller {
-    background-color: #000;
     font-size: 0.8rem;
     color: #999;
+    background-color: #000;
   }
 
 }
