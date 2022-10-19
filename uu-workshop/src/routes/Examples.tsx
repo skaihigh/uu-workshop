@@ -1,13 +1,13 @@
 import {
-  Colors,
+  // Colors,
   DesigningForAll,
   DevelopingForAll,
   EnoughIsEnough,
   Focus,
-  Font,
+  // Font,
   GoodVsBad,
   Graphics,
-  Input,
+  // Input,
   SiteSection,
   TabOrder,
   Toc,
@@ -20,9 +20,9 @@ export function Examples(): JSX.Element {
     ['Å skrive for alle', 'writing-for-all'],
     ['Å designe for alle', 'designing-for-all'],
     ['Å utvikle for alle', 'developing-for-all'],
-    ['Farger', 'colors'],
-    ['Skrift', 'font'],
-    ['Skjema', 'input'],
+    // ['Farger', 'colors'],
+    // ['Skrift', 'font'],
+    // ['Skjema', 'input'],
     ['Rekkefølge på elementer', 'taborder'],
     ['Trapped by keyboard', 'trapped-by-keyboard'],
     ['Fokus', 'focus'],
@@ -51,17 +51,17 @@ export function Examples(): JSX.Element {
         <DevelopingForAll />
       </SiteSection>
 
-      <SiteSection title="Farger" anchorName="colors">
+      {/* <SiteSection title="Farger" anchorName="colors">
         <Colors />
-      </SiteSection>
+      </SiteSection> */}
 
-      <SiteSection title="Skrift" anchorName="font">
+      {/* <SiteSection title="Skrift" anchorName="font">
         <Font />
-      </SiteSection>
+      </SiteSection> */}
 
-      <SiteSection title="Skjema" anchorName="input">
+      {/* <SiteSection title="Skjema" anchorName="input">
         <Input />
-      </SiteSection>
+      </SiteSection> */}
 
       <SiteSection title="Rekkefølge på elementer" anchorName="taborder">
         <TabOrder />

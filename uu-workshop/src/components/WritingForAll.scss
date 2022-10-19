@@ -10,6 +10,21 @@
   a {
     text-decoration: underline;
     cursor: pointer;
+    color: blue;
+
+    &.not-link-like {
+      text-decoration: none;
+      color: #000;
+    }
+
+    &:hover {
+      color: rgb(55, 101, 253);
+    }
+  }
+
+  input {
+    background-color: #fff;
+    color: #000;
   }
 
   pre {
@@ -28,14 +43,63 @@
     }
   }
 
-  .white {
+  ul.disc-list {
+    li {
+      padding-left: 0.5rem;
+      margin-top: 0.5rem;
+      margin-bottom: 0;
+      margin-left: 2rem;
+      list-style-type: disc;
+    }
+  }
+
+  .flex-container {
+    display: flex;
+    justify-content: space-evenly;
+
+    pre {
+      display: flex;
+      flex: 1;
+      align-items: center;
+
+      &:first-child {
+        margin-right: 0.5rem;
+      }
+
+      &:last-child {
+        margin-left: 0.5rem;
+      }
+
+      &.column {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+      }
+    }
+  }
+
+  .white-bg {
     color: #000;
     background-color: #fff;
+
+    
+  }
+
+  .underline {
+    text-decoration: underline;
+  }
+
+  .blue {
+    color: blue;
   }
 
   .error-message {
     font-style: italic;
     color: red;
+
+    &--color-blind {
+      color: rgb(116 51 51);
+    }
   }
 
   .info-message {
@@ -44,9 +108,12 @@
   }
 
   .input-error {
-    color: #000;
-    background-color: #fff;
     border: 2px solid red;
+
+    &--color-blind {
+      border: 2px solid rgb(116 51 51);
+    }
+
   }
 }
 

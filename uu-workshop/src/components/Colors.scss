@@ -82,20 +82,6 @@
     }
   }
 
-  &__not-many {
-    div:nth-child(1) {
-      color: red;
-    }
-
-    div:nth-child(2) {
-      color: rgb(116 51 51);
-    }
-
-    div:nth-child(3) {
-      color: blue;
-    }
-  }
-
   &__dark-and-smaller {
     font-size: 0.8rem;
     color: #999;

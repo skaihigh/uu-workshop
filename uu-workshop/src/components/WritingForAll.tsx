@@ -46,22 +46,20 @@ export function WritingForAll(): JSX.Element {
             <li>
               Skriv lenketekster som beskriver hva lenken gjør. Unngå tvetydig
               tekst, som &quot;Klikk her&quot; eller &quot;Les mer&quot;.
-              <pre>
-                <div>
+              <div className="flex-container">
+                <pre className="white-bg">
                   <a>Klikk her</a> for mer informasjon om Miles
-                </div>
-                <div>
+                </pre>
+                <pre className="white-bg">
                   <a>Klikk her for mer informasjon om Miles</a>
-                </div>
-              </pre>
+                </pre>
+              </div>
             </li>
             <li>
               Hvis lenken laster ned et dokument, er det en god idé å beskrive
               filtype og ev. filstørrelse.
-              <pre>
-                <div>
-                  <a>Last ned dokument (PDF, 20MB)</a>
-                </div>
+              <pre className="white-bg">
+                <a>Last ned dokument (PDF, 20MB)</a>
               </pre>
             </li>
           </ul>
@@ -74,27 +72,32 @@ export function WritingForAll(): JSX.Element {
               hvilken funksjon bildet har.
               <br />
               For bilder som kun er til dekorasjon, er ikke dette nødvendig.
-              <pre className="white">
-                <img src="/images/ikea.png" alt="Skrutrekker og skiftenøkkel" />
-                <div>
-                  <div>Alternativ tekst for bildet:</div>
-                  <div>&quot;Skrutrekker og skiftenøkkel&quot;</div>
-                </div>
-              </pre>
-              <pre className="white">
-                <img
-                  src="/images/ikea.png"
-                  alt="Du trenger en skrutrekker og en skiftenøkkel for å
-                    sette sammen dette møbelet"
-                />
-                <div>
-                  <div>Alternativ tekst for bildet:</div>
+              <div className="flex-container">
+                <pre className="column white-bg">
+                  <img
+                    src="/images/ikea.png"
+                    alt="Skrutrekker og skiftenøkkel"
+                  />
                   <div>
-                    &quot;Du trenger en skrutrekker og en skiftenøkkel for å
-                    sette sammen dette møbelet&quot;
+                    <div>Alternativ tekst for bildet:</div>
+                    <div>&quot;Skrutrekker og skiftenøkkel&quot;</div>
                   </div>
-                </div>
-              </pre>
+                </pre>
+                <pre className="column white-bg">
+                  <img
+                    src="/images/ikea.png"
+                    alt="Du trenger en skrutrekker og en skiftenøkkel for å
+                    sette sammen dette møbelet"
+                  />
+                  <div>
+                    <div>Alternativ tekst for bildet:</div>
+                    <div>
+                      &quot;Du trenger en skrutrekker og en skiftenøkkel for å
+                      sette sammen dette møbelet&quot;
+                    </div>
+                  </div>
+                </pre>
+              </div>
             </li>
           </ul>
         </div>
@@ -113,27 +116,37 @@ export function WritingForAll(): JSX.Element {
             <li>
               Pass på at instruksjoner, veiledninger og feilmeldinger er
               tydelige og lette å forstå. Unngå unødvendig teknisk språk.
-              <pre>
-                <label>Passord</label>
-                <input type="password" className="input-error" />
-                <div className="error-message">
-                  Noe gikk feil (error code: 500)
-                </div>
-              </pre>
-              <pre>
-                <label>Passord</label>
-                <input type="password" className="input-error" />
-                <div className="error-message">
-                  Passordet må være minst 8 tegn langt, og inneholde minst 1
-                  stor bokstav
-                </div>
-              </pre>
+              <div className="flex-container">
+                <pre className="column">
+                  <label htmlFor="password-bad-error-msg">Passord</label>
+                  <input
+                    id="password-bad-error-msg"
+                    type="password"
+                    className="input-error"
+                  />
+                  <div className="error-message">
+                    Noe gikk feil (error code: 500)
+                  </div>
+                </pre>
+                <pre className="column">
+                  <label htmlFor="password-good-error-msg">Passord</label>
+                  <input
+                    id="password-good-error-msg"
+                    type="password"
+                    className="input-error"
+                  />
+                  <div className="error-message">
+                    Passordet må være minst 8 tegn langt, og inneholde minst 1
+                    stor bokstav
+                  </div>
+                </pre>
+              </div>
             </li>
             <li>
               Beskriv krav til input-felter, som f.eks. datofelter.
               <pre>
-                <label>Dato</label>
-                <input type="date" />
+                <label htmlFor="date-format">Dato</label>
+                <input id="date-format" type="date" />
                 <div className="info-message">
                   Skriv inn en dato på formatet dd/mm/åååå
                 </div>
@@ -159,41 +172,44 @@ export function WritingForAll(): JSX.Element {
               disse bidrar til å tydeliggjøre meningen.
             </li>
           </ul>
-          <pre>
-            Samtidig med at visjonen tok form, definerte vi verdiene «faglig
-            autoritet og varme». Vi var fast bestemt på at våre konsulenter skal
-            holde et faglig høyt nivå eller ha et stort potensial. Med «varme»
-            mener vi først og fremst gode mellommenneskelige egenskaper. Som
-            konsulent må du raskt kunne tilpasse deg nye miljøer og nye
-            mennesker. Internt betyr «varme» at du bryr deg om kollegene dine og
-            bidrar til et godt sosialt miljø. Disse verdiene skal alltid være
-            retningsgivende for Miles’ kortsiktige og langsiktige valg,
-            beslutninger og prioriteringer. Verdiene styrer vår adferd og skaper
-            vår kultur. Sammen med visjonen utgjør de selskapets DNA.
-          </pre>
-          <pre>
-            Samtidig med at visjonen tok form, definerte vi verdiene «faglig
-            autoritet og varme». Vi var fast bestemt på at våre konsulenter skal
-            holde et faglig høyt nivå eller ha et stort potensial.
-            <ul>
-              <li>
-                Med «varme» mener vi først og fremst gode mellommenneskelige
-                egenskaper.
-              </li>
-              <li>
-                Som konsulent må du raskt kunne tilpasse deg nye miljøer og nye
-                mennesker.
-              </li>
-              <li>
-                Internt betyr «varme» at du bryr deg om kollegene dine og bidrar
-                til et godt sosialt miljø.
-              </li>
-            </ul>
-            Disse verdiene skal alltid være retningsgivende for Miles’
-            kortsiktige og langsiktige valg, beslutninger og prioriteringer.
-            Verdiene styrer vår adferd og skaper vår kultur. Sammen med visjonen
-            utgjør de selskapets DNA.
-          </pre>
+          <div className="flex-container">
+            <pre className="column">
+              Samtidig med at visjonen tok form, definerte vi verdiene «faglig
+              autoritet og varme». Vi var fast bestemt på at våre konsulenter
+              skal holde et faglig høyt nivå eller ha et stort potensial. Med
+              «varme» mener vi først og fremst gode mellommenneskelige
+              egenskaper. Som konsulent må du raskt kunne tilpasse deg nye
+              miljøer og nye mennesker. Internt betyr «varme» at du bryr deg om
+              kollegene dine og bidrar til et godt sosialt miljø. Disse verdiene
+              skal alltid være retningsgivende for Miles’ kortsiktige og
+              langsiktige valg, beslutninger og prioriteringer. Verdiene styrer
+              vår adferd og skaper vår kultur. Sammen med visjonen utgjør de
+              selskapets DNA.
+            </pre>
+            <pre className="column">
+              Samtidig med at visjonen tok form, definerte vi verdiene «faglig
+              autoritet og varme». Vi var fast bestemt på at våre konsulenter
+              skal holde et faglig høyt nivå eller ha et stort potensial.
+              <ul>
+                <li>
+                  Med «varme» mener vi først og fremst gode mellommenneskelige
+                  egenskaper.
+                </li>
+                <li>
+                  Som konsulent må du raskt kunne tilpasse deg nye miljøer og
+                  nye mennesker.
+                </li>
+                <li>
+                  Internt betyr «varme» at du bryr deg om kollegene dine og
+                  bidrar til et godt sosialt miljø.
+                </li>
+              </ul>
+              Disse verdiene skal alltid være retningsgivende for Miles’
+              kortsiktige og langsiktige valg, beslutninger og prioriteringer.
+              Verdiene styrer vår adferd og skaper vår kultur. Sammen med
+              visjonen utgjør de selskapets DNA.
+            </pre>
+          </div>
         </div>
       </div>
     </div>
