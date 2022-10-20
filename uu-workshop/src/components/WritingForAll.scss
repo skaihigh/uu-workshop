@@ -1,16 +1,21 @@
 .a11y-for-all {
   ul {
     flex-direction: column;
+    margin-bottom: 2rem;
   }
 
   li {
     margin-bottom: 2rem;
   }
 
+  p {
+    margin: 0;
+  }
+
   a {
     text-decoration: underline;
     cursor: pointer;
-    color: blue;
+    // color: blue;
 
     &.not-link-like {
       text-decoration: none;
@@ -29,6 +34,11 @@
 
   pre {
     white-space: break-spaces;
+    min-width: 280px;
+
+    a {
+      color: blue;
+    }
 
     ul {
       padding: 1rem;
@@ -41,6 +51,10 @@
         list-style-type: disc;
       }
     }
+  }
+
+  .section {
+    margin-bottom: 6rem;
   }
 
   ul.disc-list {
@@ -56,11 +70,15 @@
   .flex-container {
     display: flex;
     justify-content: space-evenly;
+    flex-flow: wrap;
 
-    pre {
+    pre,
+    div:not([role='button']) {
       display: flex;
       flex: 1;
-      align-items: center;
+      align-items: baseline;
+      justify-content: flex-start;
+      padding: 1rem 1.4rem;
 
       &:first-child {
         margin-right: 0.5rem;

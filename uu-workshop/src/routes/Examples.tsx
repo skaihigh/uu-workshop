@@ -3,13 +3,13 @@ import {
   DesigningForAll,
   DevelopingForAll,
   EnoughIsEnough,
-  Focus,
+  // Focus,
   // Font,
   GoodVsBad,
-  Graphics,
+  // Graphics,
   // Input,
   SiteSection,
-  TabOrder,
+  // TabOrder,
   Toc,
   TrappedByKeyboard,
   WritingForAll,
@@ -23,10 +23,10 @@ export function Examples(): JSX.Element {
     // ['Farger', 'colors'],
     // ['Skrift', 'font'],
     // ['Skjema', 'input'],
-    ['Rekkefølge på elementer', 'taborder'],
+    // ['Rekkefølge på elementer', 'taborder'],
     ['Trapped by keyboard', 'trapped-by-keyboard'],
-    ['Fokus', 'focus'],
-    ['Grafikk og bilder', 'graphics'],
+    // ['Fokus', 'focus'],
+    // ['Grafikk og bilder', 'graphics'],
     ['The good, the bad and the W3C compliant', 'good-vs-bad'],
     ['Nok er nok?', 'enough-is-enough'],
   ]
@@ -63,21 +63,21 @@ export function Examples(): JSX.Element {
         <Input />
       </SiteSection> */}
 
-      <SiteSection title="Rekkefølge på elementer" anchorName="taborder">
+      {/* <SiteSection title="Rekkefølge på elementer" anchorName="taborder">
         <TabOrder />
-      </SiteSection>
+      </SiteSection> */}
 
       <SiteSection title="Trapped by keyboard" anchorName="trapped-by-keyboard">
         <TrappedByKeyboard />
       </SiteSection>
 
-      <SiteSection title="Fokus" anchorName="focus">
+      {/* <SiteSection title="Fokus" anchorName="focus">
         <Focus />
-      </SiteSection>
+      </SiteSection> */}
 
-      <SiteSection title="Grafikk og bilder" anchorName="graphics">
+      {/* <SiteSection title="Grafikk og bilder" anchorName="graphics">
         <Graphics />
-      </SiteSection>
+      </SiteSection> */}
 
       <SiteSection
         title="The good, the bad and the W3C compliant"
