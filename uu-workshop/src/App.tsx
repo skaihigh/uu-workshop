@@ -41,6 +41,9 @@ function Layout(): JSX.Element {
           <Link title="Hvem er vi?" to="/">
             De tre musketerer
           </Link>
+          <Link title="Påstander" to="/paastander">
+            Påstander
+          </Link>
           <Link title="Eksempler" to="/eksempler">
             Eksempler
           </Link>

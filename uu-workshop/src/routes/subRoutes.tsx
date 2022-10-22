@@ -1,7 +1,11 @@
 import { Link, RouteObject } from 'react-router-dom'
-import { Examples, Slides, Tasks, WhoWeAre } from '.'
+import { Claims, Examples, Slides, Tasks, WhoWeAre } from '.'
 
 export const subRoutes: RouteObject[] = [
+  {
+    path: '/paastander',
+    element: <Claims />,
+  },
   {
     path: '/eksempler',
     element: <Examples />,
@@ -25,7 +29,7 @@ export const subRoutes: RouteObject[] = [
 function NoMatch(): JSX.Element {
   return (
     <div>
-      <h2>Nei, men stakars... Har du gått deg bort du da?</h2>
+      <h2>Nei, men stakkars... Har du gått deg bort du da?</h2>
 
       <p>
         Det kan ha vært dårlig skilta, høl i veien eller rett og slett uflaks,
