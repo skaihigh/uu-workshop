@@ -3,23 +3,31 @@ import './GoodVsBad.scss'
 // export function MenuItems(props: { subRoutes: RouteObject[] }): JSX.Element {
 //   const { subRoutes } = props
 
-function Image(props: { src: string, alt?: string }): JSX.Element {
-  const { src, alt } = props;
-  return <img src={`/images/${src}`} alt={alt} />;
+function Image(props: { src: string; alt?: string }): JSX.Element {
+  const { src, alt } = props
+  return <img src={`/images/${src}`} alt={alt} />
 }
 
-function LabelAndInput(props: { id: string, htmlFor?: string, labelText: string }): JSX.Element {
-  const { id, htmlFor, labelText } = props;
+function LabelAndInput(props: {
+  id: string
+  htmlFor?: string
+  labelText: string
+}): JSX.Element {
+  const { id, htmlFor, labelText } = props
   return (
     <div className="label-and-input">
-      {htmlFor ? <label htmlFor={htmlFor}>{labelText}</label> : <div>{labelText}</div>}
+      {htmlFor ? (
+        <label htmlFor={htmlFor}>{labelText}</label>
+      ) : (
+        <div>{labelText}</div>
+      )}
       <input id={id} />
     </div>
-  );
+  )
 }
 
-function FlowerNils(props: { iconAlt?: string, imgAlt?: string }): JSX.Element {
-  const { iconAlt, imgAlt } = props;
+function FlowerNils(props: { iconAlt?: string; imgAlt?: string }): JSX.Element {
+  const { iconAlt, imgAlt } = props
   return (
     <>
       <br />
@@ -37,7 +45,7 @@ function FlowerNils(props: { iconAlt?: string, imgAlt?: string }): JSX.Element {
         </span>
       </div>
     </>
-  );
+  )
 }
 
 export function GoodVsBad(): JSX.Element {
@@ -53,15 +61,13 @@ export function GoodVsBad(): JSX.Element {
             <LabelAndInput id="bad-input-1" labelText="Navn" />
             <LabelAndInput id="bad-input-2" labelText="Adresse" />
 
-            <button onClick={() => alert("Skjema sendt inn!")}>
+            <button onClick={() => alert('Skjema sendt inn!')}>
               <Image src="submit_button.png" />
             </button>
           </div>
 
           <FlowerNils />
         </div>
-
-        <pre>Vis koden her</pre> 
       </div>
       {/* good  */}
       <div className="good-vs-bad good-vs-bad--good">
@@ -72,20 +78,32 @@ export function GoodVsBad(): JSX.Element {
             <form>
               <fieldset>
                 <legend>Fyll inn kontaktinformasjon</legend>
-                <LabelAndInput id="good-input-1" htmlFor="good-input-1" labelText="Navn" />
-                <LabelAndInput id="good-input-2" htmlFor="good-input-2" labelText="Adresse" />
+                <LabelAndInput
+                  id="good-input-1"
+                  htmlFor="good-input-1"
+                  labelText="Navn"
+                />
+                <LabelAndInput
+                  id="good-input-2"
+                  htmlFor="good-input-2"
+                  labelText="Adresse"
+                />
 
-                <button onClick={() => alert("Skjema sendt inn!")} type="submit">
+                <button
+                  onClick={() => alert('Skjema sendt inn!')}
+                  type="submit"
+                >
                   <Image src="submit_button.png" alt="Send inn skjema" />
                 </button>
               </fieldset>
             </form>
           </div>
 
-          <FlowerNils iconAlt="Telefon: " imgAlt="Klikk for å se fine blomster" />
+          <FlowerNils
+            iconAlt="Telefon: "
+            imgAlt="Klikk for å se fine blomster"
+          />
         </div>
-        
-        <pre>Vis koden her</pre> 
       </div>
     </div>
   )

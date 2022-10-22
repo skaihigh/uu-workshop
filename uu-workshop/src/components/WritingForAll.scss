@@ -113,7 +113,7 @@
 
   .error-message {
     font-style: italic;
-    color: red;
+    color: rgb(189, 19, 19);
 
     &--color-blind {
       color: rgb(116 51 51);
@@ -122,11 +122,11 @@
 
   .info-message {
     font-style: italic;
-    color: #eee;
+    color: #000;
   }
 
   .input-error {
-    border: 2px solid red;
+    border: 2px solid rgb(189, 19, 19);
 
     &--color-blind {
       border: 2px solid rgb(116 51 51);

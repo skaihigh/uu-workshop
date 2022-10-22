@@ -1,13 +1,6 @@
-export * from './Colors'
 export * from './DesigningForAll'
 export * from './DevelopingForAll'
-export * from './EnoughIsEnough'
-export * from './Focus'
-export * from './Font'
 export * from './GoodVsBad'
-export * from './Graphics'
-export * from './Input'
-export * from './TabOrder'
 export * from './TrappedByKeyboard'
 export * from './WritingForAll'
 

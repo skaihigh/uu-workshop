@@ -115,7 +115,7 @@ export function WritingForAll(): JSX.Element {
               Pass på at instruksjoner, veiledninger og feilmeldinger er
               tydelige og lette å forstå. Unngå unødvendig teknisk språk.
               <div className="flex-container">
-                <pre className="column">
+                <pre className="column white-bg">
                   <label htmlFor="password-bad-error-msg">Passord</label>
                   <input
                     id="password-bad-error-msg"
@@ -126,7 +126,7 @@ export function WritingForAll(): JSX.Element {
                     Noe gikk feil (error code: 500)
                   </p>
                 </pre>
-                <pre className="column">
+                <pre className="column white-bg">
                   <label htmlFor="password-good-error-msg">Passord</label>
                   <input
                     id="password-good-error-msg"
@@ -142,7 +142,7 @@ export function WritingForAll(): JSX.Element {
             </li>
             <li>
               Beskriv krav til input-felter, som f.eks. datofelter.
-              <pre>
+              <pre className="column white-bg">
                 <label htmlFor="date-format">Dato</label>
                 <input id="date-format" type="date" />
                 <p className="info-message">
