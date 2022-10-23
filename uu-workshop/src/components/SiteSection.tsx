@@ -1,4 +1,4 @@
-import './SiteSection.scss'
+import '../../scss/SiteSection.scss'
 
 export interface SiteSectionProps {
   title: string

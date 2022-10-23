@@ -1,5 +1,5 @@
 import React, { DetailedHTMLProps, InputHTMLAttributes } from 'react'
-import './Toggle.scss'
+import '../../scss/Toggle.scss'
 
 // https://www.robinwieruch.de/react-web-components/
 

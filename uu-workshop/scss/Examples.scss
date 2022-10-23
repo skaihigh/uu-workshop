@@ -1,0 +1,320 @@
+.examples {
+    ul {
+      flex-direction: column;
+      margin-bottom: 2rem;
+    }
+  
+    li {
+      margin-bottom: 2rem;
+    }
+  
+    p {
+      margin: 0;
+    }
+  
+    a {
+      text-decoration: underline;
+      cursor: pointer;
+  
+      &.not-link-like {
+        text-decoration: none;
+        color: #000;
+      }
+  
+      &:hover {
+        color: rgb(55, 101, 253);
+      }
+    }
+  
+    .error-message {
+      font-style: italic;
+      color: rgb(189, 19, 19);
+  
+      &--color-blind {
+        color: rgb(116 51 51);
+      }
+    }
+  
+    .info-message {
+      font-style: italic;
+      color: #000;
+    }
+  
+    .input-error {
+      border: 2px solid rgb(189, 19, 19);
+  
+      &--color-blind {
+        border: 2px solid rgb(116 51 51);
+      }
+  
+    }
+
+    .colors {
+        > div {
+            margin-bottom: 2rem;
+        }
+
+        &__panels {
+            display: flex;
+            flex-flow: wrap;
+
+            &__panel {  
+                flex: 1;
+                padding: 1rem;
+                margin-right: 1rem;
+                margin-bottom: 1rem;
+                border-radius: 10px;
+
+                a {
+                    min-height: auto;
+                    line-height: initial;
+                    color: blue;
+                }
+
+                &--low-contrast {
+                    color: rgb(255 255 255);
+                    background-color: rgb(211 211 211);
+                }
+
+                &--dark-mode {
+                    color: #fff;
+                    background-color: #000;
+
+                    a:focus-visible {
+                    outline-color: blue;
+                    }
+                }
+
+                &--light-mode {
+                    color: #777;
+                    background-color: #fff;
+                    border: 1px solid #ccc;
+                }
+            }
+        }
+
+        &__too-many {
+            display: flex;
+
+            div {
+                padding: 0.4rem;
+            }
+
+            div:nth-child(1) {
+                color: #fff;
+                background-color: red;
+            }
+
+            div:nth-child(2) {
+                color: #fff;
+                background-color: green;
+            }
+
+            div:nth-child(3) {
+                color: #fff;
+                background-color: orange;
+            }
+
+            div:nth-child(4) {
+                color: #fff;
+                background-color: blue;
+            }
+
+            div:nth-child(5) {
+                color: #fff;
+                background-color: purple;
+            }
+
+            div:nth-child(6) {
+                color: #fff;
+                background-color: darkcyan;
+            }
+        }
+
+        &__dark-and-smaller {
+            font-size: 0.8rem;
+            color: #999;
+            background-color: #000;
+        }
+    }
+
+    .input {
+        font-size: 1rem;
+    
+        li {
+            display: flex;
+            justify-content: space-between;
+        }
+    
+        input {
+            outline: none;
+        }
+    
+    
+        /* temp style */
+        // border: 1px solid #ccc;
+        // border-radius: 4px;
+    }
+
+    .tab-order {
+        &__grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            color: #000;
+
+            @media only screen and (min-width: 720px) { // TODO: global breakpoint-variabel
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 10rem;
+                margin: 1rem;
+                font-size: 2rem;
+                color: #000 !important;
+                text-decoration: none !important;
+                background-color: lightblue;
+
+                &:hover {
+                    background-color: rgb(181 225 240);
+                }
+
+                &:nth-child(2) {
+                    grid-row: 2;
+                    grid-column: 1;
+
+                    @media only screen and (min-width: 720px) {
+                        grid-row: 1;
+                        grid-column: 3;
+                    }
+                }
+
+                &:nth-child(3) {
+                    grid-row: 1;
+                    grid-column: 2;
+                }
+
+                &:nth-child(6) {
+                    grid-row: 2;
+                    grid-column: 2;
+
+                    @media only screen and (min-width: 720px) {
+                        grid-row: 2;
+                        grid-column: 1;
+                    }
+                }
+            }
+        }
+
+        code {
+            color: #000;
+        }
+    }
+}
+
+.good-vs-bad {
+    flex: 1;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+
+    &__wrapper {
+        display: flex;
+        flex-flow: wrap;
+    }
+
+    > div {
+        width: 100%;
+        min-height: 40rem;
+        padding: 1rem;
+        background-color: #fff;
+        border: 1px solid #eee;
+        border-radius: 5px;
+    }
+
+    fieldset {
+        padding: 0;
+        margin-bottom: 0;
+        border: none;
+        border-radius: 0;
+    }
+
+    legend {
+        padding: 0;
+        color: #000;
+    }
+
+    img {
+        border-radius: 0;
+    }
+
+    span {
+        display: flex;
+        font-size: 0.8rem;
+        color: #666;
+
+        img {
+            width: 20px;
+            margin-right: 0.4rem;
+        }
+    }
+
+    button, img {
+        display: block;
+        padding: 0;
+        background-color: transparent;
+
+        &:hover,
+        &:focus {
+            filter: none;
+        }
+    }
+
+    h1, h2, h3 {
+        margin: 1rem 0 2rem;
+        color: #000;
+    }
+
+    h1,
+    h1:nth-of-type(1) {
+        max-width: 100%;
+        font-size: 2.4rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+    
+    h3 {
+        font-size: 1.8rem;
+    }
+
+    input {
+        width: 100%;
+        color: #000;
+        background-color: #fff;
+    }
+
+    &--bad {
+        h2 {
+            font-size: 1.8rem;
+        }
+
+        h3 {
+            font-size: 2rem;
+        }
+    }
+
+    .label-and-input {
+        & > label, & > div {
+            color: #000;
+        }
+    }
+}
+
+.trapped-by-keyboard {
+    a {
+        display: block;
+    }
+}

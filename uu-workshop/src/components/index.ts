@@ -7,4 +7,4 @@ export * from './WritingForAll'
 export * from './SiteSection'
 export * from './Toc'
 
-export * from './Toggle/Toggle'
+export * from './Toggle'

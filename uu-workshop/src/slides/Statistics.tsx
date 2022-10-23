@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import './Slides.scss'
+import '../../scss/Slides.scss'
 export function Statistics(): JSX.Element {
   return (
     <section>

@@ -8,6 +8,9 @@ import {
   WritingForAll,
 } from '../components'
 
+import '../../scss/Common.scss'
+import '../../scss/Examples.scss'
+
 export function Examples(): JSX.Element {
   const sectionNames = [
     ['Å skrive for alle', 'writing-for-all'],

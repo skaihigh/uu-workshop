@@ -1,4 +1,4 @@
-import './Toc.scss'
+import '../../scss/Toc.scss'
 
 export interface TocProps {
   sectionNames: string[][]

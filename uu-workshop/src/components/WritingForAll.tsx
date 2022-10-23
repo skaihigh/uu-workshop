@@ -1,8 +1,6 @@
-import './WritingForAll.scss'
-
 export function WritingForAll(): JSX.Element {
   return (
-    <div className="a11y-for-all writing-for-all">
+    <div className="examples">
       <a
         href="https://www.w3.org/WAI/tips/writing/"
         rel="noreferrer"

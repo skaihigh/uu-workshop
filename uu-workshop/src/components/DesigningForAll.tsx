@@ -1,14 +1,10 @@
-import './DesigningForAll.scss'
-import './Colors.scss'
-import './Input.scss'
-
 import { useState } from 'react'
 
 export function DesigningForAll(): JSX.Element {
   const [showFeedback, setShowFeedback] = useState(false)
 
   return (
-    <div className="a11y-for-all designing-for-all">
+    <div className="examples">
       <a
         href="https://www.w3.org/WAI/tips/designing/"
         rel="noreferrer"

@@ -1,6 +1,6 @@
 // https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/G1
 
-import './SkipLinks.scss'
+import '../../scss/SkipLinks.scss'
 
 export function SkipLinks(): JSX.Element {
   return (

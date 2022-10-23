@@ -1,9 +1,6 @@
-import './DevelopingForAll.scss'
-import './TabOrder.scss'
-
 export function DevelopingForAll(): JSX.Element {
   return (
-    <div className="a11y-for-all developing-for-all">
+    <div className="examples">
       <a
         href="https://www.w3.org/WAI/tips/developing/"
         rel="noreferrer"

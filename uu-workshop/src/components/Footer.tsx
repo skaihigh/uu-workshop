@@ -1,4 +1,4 @@
-import './Footer.scss'
+import '../../scss/Footer.scss'
 
 export function Footer(): JSX.Element {
   return (

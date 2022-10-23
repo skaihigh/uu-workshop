@@ -1,4 +1,4 @@
-export function Claim2(): JSX.Element {
+export function Claim7(): JSX.Element {
   return (
     <div className="claims">
       <h3>
@@ -6,7 +6,7 @@ export function Claim2(): JSX.Element {
       </h3>
       <ul className="disc-list">
         <li>Blabla</li>
-        <li> Blabla</li>
+        <li>Blabla</li>
       </ul>
       <h3>
         {' '}
@@ -14,9 +14,9 @@ export function Claim2(): JSX.Element {
       </h3>
       <ul className="disc-list">
         <li>
-          Burde denne ‘spesialkompetansen’ egentlig være ‘grunnleggende’
-          kompetanse? Kan man påstå man ikke ‘kan’ programmere før man
-          inkluderer UU-hensyn i kodestilen sin?
+          Hvis man skal lage egendefinerte komponenter (som f.eks. en dropdown
+          som ikke bruker HTML’s select-tag), må man implementere all innebygd
+          funksjonalitet som select-tag’et har, i den egendefinerte komponenten
         </li>
         <li>Blabla</li>
       </ul>

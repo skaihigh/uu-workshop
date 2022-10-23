@@ -1,8 +1,3 @@
-import './GoodVsBad.scss'
-
-// export function MenuItems(props: { subRoutes: RouteObject[] }): JSX.Element {
-//   const { subRoutes } = props
-
 function Image(props: { src: string; alt?: string }): JSX.Element {
   const { src, alt } = props
   return <img src={`/images/${src}`} alt={alt} />

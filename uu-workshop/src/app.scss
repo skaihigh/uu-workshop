@@ -17,6 +17,13 @@ p {
 
 main {
   aside {
+    nav {
+      a {
+        min-height: auto;
+        margin-bottom: 1rem;
+        line-height: 1.5;
+      }
+    }
   }
 
   section:nth-of-type(1),
@@ -38,6 +45,7 @@ main {
   justify-content: space-between;
   margin-top: 1rem;
 }
+
 
 /*
 header,
