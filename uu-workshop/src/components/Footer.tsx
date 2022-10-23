@@ -2,7 +2,7 @@ import '../../scss/Footer.scss'
 
 export function Footer(): JSX.Element {
   return (
-    <>
+    <div className="footer">
       <p className="skip">
         <a
           title="Ressurslenker WCAG verktøy"
@@ -51,6 +51,6 @@ export function Footer(): JSX.Element {
           </a>
         </li>
       </ul>
-    </>
+    </div>
   )
 }

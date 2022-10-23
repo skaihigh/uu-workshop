@@ -1,4 +1,4 @@
-@import url('./simple.min.css');
+@import './simple.min.css';
 
 :root {
   text-size-adjust: 100%;
@@ -15,16 +15,16 @@ body {
 a {
   min-height: 44px; /* WCAG 2.5.5: target size; */
   line-height: 44px;
-  color: #f3f3ff; /*  WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17 */
+  color: #0d47a1; /* #f3f3ff; */ /*  WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17 */
 }
 
 .visuallyhidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
   position: absolute;
   width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  border: 0;
 }
