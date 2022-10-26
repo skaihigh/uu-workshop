@@ -7,7 +7,9 @@ export function Claim7(): JSX.Element {
       <details>
         <summary>?</summary>
         <ul className="disc-list">
-          <li>Blabla</li>
+          <li>
+            Stemmer, UU er ikke KUN produkteiernes/prosjektledernes ansvar
+          </li>
           <li>Blabla</li>
         </ul>
       </details>
@@ -17,13 +19,14 @@ export function Claim7(): JSX.Element {
       <details>
         <summary>?</summary>
         <ul className="disc-list">
+          <li>Jo, UU er OGSÅ produkteiernes/prosjektledernes ansvar</li>
           <li>
-            Hvis man skal lage egendefinerte komponenter (som f.eks. en dropdown
-            som ikke bruker HTML’s select-tag), må man implementere all innebygd
-            funksjonalitet som select-tag’et har, i den egendefinerte
-            komponenten
+            Ansvar for UU bør ligge på alle ledd, fra produkteierne i ‘toppen’
+            til utviklerne i ‘bunnen’
           </li>
-          <li>Blabla</li>
+          <li>
+            Jo tidligere i prosessen man starter med å tenke over UU, jo bedre.
+          </li>
         </ul>
       </details>
     </div>

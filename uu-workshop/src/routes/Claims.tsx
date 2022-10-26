@@ -6,6 +6,7 @@ import {
   Claim5,
   Claim6,
   Claim7,
+  Claim8,
   Conclusion,
 } from '../claims'
 
@@ -31,9 +32,10 @@ export function Claims(): JSX.Element {
       'claim-5-anchor',
     ],
     ['UU er ikke utviklernes ansvar', 'claim-6-anchor'],
+    ['UU er ikke produkteiernes/prosjektledernes ansvar', 'claim-7-anchor'],
     [
       'Det spiller ingen rolle om man bruker egendefinerte komponenter i stedet for HTML-tags',
-      'claim-7-anchor',
+      'claim-8-anchor',
     ],
     ['Konklusjon?', 'conclusion-anchor'],
   ]
@@ -89,10 +91,17 @@ export function Claims(): JSX.Element {
       </SiteSection>
 
       <SiteSection
-        title="Det spiller ingen rolle om man bruker egendefinerte komponenter i stedet for HTML-tags"
+        title="UU er ikke produkteiernes/prosjektledernes ansvar"
         anchorName="claim-7-anchor"
       >
         <Claim7 />
+      </SiteSection>
+
+      <SiteSection
+        title="Det spiller ingen rolle om man bruker egendefinerte komponenter i stedet for HTML-tags"
+        anchorName="claim-8-anchor"
+      >
+        <Claim8 />
       </SiteSection>
 
       <SiteSection title="Konklusjon?" anchorName="conclusion-anchor">
