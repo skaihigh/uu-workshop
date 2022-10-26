@@ -14,7 +14,8 @@ body {
 
 a {
   min-height: 44px; /* WCAG 2.5.5: target size; */
-  line-height: 44px;
+
+  /* line-height: 44px; */
 
   /* color: #f3f3ff;  WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17 */
 }
