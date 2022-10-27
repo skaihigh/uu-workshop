@@ -19,8 +19,19 @@ export function WhoWeAre(): JSX.Element {
     <>
       <Toc sectionNames={sectionNames} title="Naviger oss" id="toc" />
       <h1 id="maincontent">Om oss</h1>
-      <SiteSection title="Forklaring" anchorName="explain">
-        <p>vi forklarer vi forklarer vi forklarer vi forklarer</p>
+      <SiteSection title="Hva gjør vi her?" anchorName="explain">
+        <ul className="disc-list">
+          <li>
+            Skulle egentlig hatt 2 forskjellige workshops, én om UX og én om
+            front-end
+          </li>
+          <li>
+            Felles interesse og faglig overlapp med UU; valgte å fokusere på
+            dette
+          </li>
+        </ul>
+        <br />
+        <br />
       </SiteSection>
       <SiteSection title="Wenche" anchorName="wenche">
         <p>Wenche tata!</p>
