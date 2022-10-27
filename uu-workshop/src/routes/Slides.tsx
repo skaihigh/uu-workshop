@@ -1,13 +1,6 @@
 import { Link } from 'react-router-dom'
 import { SiteSection, Toc } from '../components'
-import {
-  Personas,
-  Statistics,
-  Techniques,
-  TheLaw,
-  TheDeclaration,
-  Tools,
-} from '../slides'
+import { Personas, Statistics, TheLaw, TheDeclaration } from '../slides'
 
 export function Slides(): JSX.Element {
   const sectionNames = [
@@ -15,8 +8,6 @@ export function Slides(): JSX.Element {
     ['Statistikk', 'statistics'],
     ['Tilgjengelighetserklæring', 'thedeclaration'],
     ['Regelverk og krav', 'thelaw'],
-    ['Teknikker', 'techniques'],
-    ['Verktøy', 'tools'],
   ]
   return (
     <>
@@ -50,14 +41,6 @@ export function Slides(): JSX.Element {
 
       <SiteSection title="Regelverk og krav" anchorName="thelaw">
         <TheLaw />
-      </SiteSection>
-
-      <SiteSection title="Teknikker" anchorName="techniques">
-        <Techniques />
-      </SiteSection>
-
-      <SiteSection title="Verktøy" anchorName="tools">
-        <Tools />
       </SiteSection>
     </>
   )

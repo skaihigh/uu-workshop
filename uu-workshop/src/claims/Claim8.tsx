@@ -7,7 +7,7 @@ export function Claim8(): JSX.Element {
       <details>
         <summary>?</summary>
         <ul className="disc-list">
-          <li>Blabla</li>
+          <li>&quot;If it quacks like a duck...&quot;</li>
           <li>Blabla</li>
         </ul>
       </details>

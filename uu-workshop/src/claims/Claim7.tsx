@@ -26,6 +26,8 @@ export function Claim7(): JSX.Element {
           </li>
           <li>
             Jo tidligere i prosessen man starter med å tenke over UU, jo bedre.
+            Bedre å gjøre småendringer hele tiden, enn store skippertak i
+            ettertid.
           </li>
         </ul>
       </details>

@@ -39,7 +39,11 @@ function Layout(): JSX.Element {
         </div>
         <nav>
           <Link title="Hvem er vi?" to="/">
-            De tre musketerer
+            De <span style={{ textDecoration: 'line-through' }}>tre</span> to
+            musketerer
+          </Link>
+          <Link title="Fakta" to="/lysbilder">
+            Fakta
           </Link>
           <Link title="Påstander" to="/paastander">
             Påstander
@@ -47,8 +51,8 @@ function Layout(): JSX.Element {
           <Link title="Eksempler" to="/eksempler">
             Eksempler
           </Link>
-          <Link title="Lysbilder" to="/lysbilder">
-            Lysbilder
+          <Link title="Verktøy" to="/verktoey">
+            Verktøy
           </Link>
           <Link title="Oppgaver" to="/oppgaver">
             Oppgaver

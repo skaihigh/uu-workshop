@@ -1,6 +1,4 @@
 export * from './Personas'
 export * from './Statistics'
-export * from './Techniques'
 export * from './TheLaw'
 export * from './TheDeclaration'
-export * from './Tools'

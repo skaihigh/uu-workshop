@@ -26,7 +26,10 @@ export function Claim3(): JSX.Element {
             aldri faktisk være helt sikker på om dette ikke gjelder vår
             brukergruppe også
           </li>
-          <li>Blabla</li>
+          <li>
+            15% av Norges befolkning har en eller annen form for
+            funksjonsnedsettelse
+          </li>
         </ul>
       </details>
     </div>

@@ -1,5 +1,5 @@
 import { Link, RouteObject } from 'react-router-dom'
-import { Claims, Examples, Slides, Tasks, WhoWeAre } from '.'
+import { Claims, Examples, Slides, Tasks, Tools, WhoWeAre } from '.'
 
 export const subRoutes: RouteObject[] = [
   {
@@ -17,6 +17,10 @@ export const subRoutes: RouteObject[] = [
   {
     path: '/oppgaver',
     element: <Tasks />,
+  },
+  {
+    path: '/verktoey',
+    element: <Tools />,
   },
   {
     index: true,

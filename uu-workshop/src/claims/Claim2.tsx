@@ -7,7 +7,7 @@ export function Claim2(): JSX.Element {
       <details>
         <summary>?</summary>
         <ul className="disc-list">
-          <li>Blabla</li>
+          <li>Det finnes verktøy, men disse kan ikke klare alt</li>
           <li> Blabla</li>
         </ul>
       </details>
