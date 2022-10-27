@@ -8,7 +8,7 @@ export function Claim2(): JSX.Element {
         <summary>?</summary>
         <ul className="disc-list">
           <li>Det finnes verktøy, men disse kan ikke klare alt</li>
-          <li> Blabla</li>
+          <li>...</li>
         </ul>
       </details>
       <h3>
@@ -22,7 +22,7 @@ export function Claim2(): JSX.Element {
             kompetanse? Kan man påstå man ikke ‘kan’ programmere før man
             inkluderer UU-hensyn i kodestilen sin?
           </li>
-          <li>Blabla</li>
+          <li>...</li>
         </ul>
       </details>
     </div>

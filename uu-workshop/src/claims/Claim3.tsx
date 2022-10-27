@@ -11,7 +11,7 @@ export function Claim3(): JSX.Element {
             Enkelte produkter har en veldig smal brukergruppe, så her er det
             ikke nødvendig å tenke på UU (eksempler på sånne produkter?)
           </li>
-          <li> Blabla</li>
+          <li>...</li>
         </ul>
       </details>
       <h3>
@@ -30,6 +30,7 @@ export function Claim3(): JSX.Element {
             15% av Norges befolkning har en eller annen form for
             funksjonsnedsettelse
           </li>
+          <li>...</li>
         </ul>
       </details>
     </div>

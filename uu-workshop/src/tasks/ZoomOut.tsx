@@ -7,7 +7,10 @@ export function ZoomOut(): JSX.Element {
         </a>
         .
       </p>
-      <p>Zoom ut siden til 10% (eller så langt det går).</p>
+      <p>
+        Zoom ut siden til 10% (eller så langt det går), og se hvordan det går å
+        navigere seg rundt i innholdet.
+      </p>
     </>
   )
 }

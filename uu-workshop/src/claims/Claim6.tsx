@@ -8,7 +8,7 @@ export function Claim6(): JSX.Element {
         <summary>?</summary>
         <ul className="disc-list">
           <li>Stemmer, UU er ikke KUN utviklernes ansvar</li>
-          <li>Blabla</li>
+          <li>...</li>
         </ul>
       </details>
       <h3>
@@ -22,7 +22,7 @@ export function Claim6(): JSX.Element {
             Ansvar for UU bør ligge på alle ledd, fra produkteierne i ‘toppen’
             til utviklerne i ‘bunnen’
           </li>
-          <li>Blablabla</li>
+          <li>...</li>
         </ul>
       </details>
     </div>

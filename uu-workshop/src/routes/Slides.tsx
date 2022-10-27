@@ -22,6 +22,7 @@ export function Slides(): JSX.Element {
         <p lang="fr">Sauf pour ce qui est écrit en mauvais français.</p>
         <Link to="https://www.w3.org">W3C</Link>
         <p>vi forklarer vi forklarer vi forklarer vi forklarer</p> */}
+        <p>Noen bud?</p>
         <details>
           <summary>?</summary>
           <strong>Store norske leksikon:</strong>

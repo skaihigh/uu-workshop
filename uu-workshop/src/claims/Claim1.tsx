@@ -12,7 +12,7 @@ export function Claim1(): JSX.Element {
             ordentlig
           </li>
           <li>Ja, det krever at man setter seg inn i regler og anbefalinger</li>
-          <li> Blabla</li>
+          <li>...</li>
         </ul>
       </details>
       <h3>
@@ -25,7 +25,7 @@ export function Claim1(): JSX.Element {
             Når ting blir gjort ordentlig fra starten, kreves det mindre
             ressurser i lengden (vedlikehold og videreutvikling)
           </li>
-          <li>Blabla</li>
+          <li>...</li>
         </ul>
       </details>
     </div>

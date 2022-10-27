@@ -7,8 +7,8 @@ export function Claim5(): JSX.Element {
       <details>
         <summary>?</summary>
         <ul className="disc-list">
-          <li>Blabla</li>
-          <li>Blabla</li>
+          <li>...</li>
+          <li>...</li>
         </ul>
       </details>
       <h3>
@@ -19,10 +19,9 @@ export function Claim5(): JSX.Element {
         <ul className="disc-list">
           <li>
             Med andre ord: “Vi velger å diskriminere noen brukere, men ikke
-            alle”. (“Jeg er ikke rasist, men…”) Hvilke brukergrupper er mer
-            viktige enn andre?
+            alle”. Hvilke brukergrupper er mer viktige enn andre?
           </li>
-          <li>Blabla</li>
+          <li>...</li>
         </ul>
       </details>
     </div>

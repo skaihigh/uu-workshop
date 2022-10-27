@@ -11,7 +11,7 @@ export function Claim4(): JSX.Element {
             Vi kjenner alle som skal bruke systemet, og er sikre på at det ikke
             er noen som har nedsatt funksjonsevne
           </li>
-          <li> Blabla</li>
+          <li>...</li>
         </ul>
       </details>
       <h3>
@@ -28,10 +28,10 @@ export function Claim4(): JSX.Element {
           <li>
             Hva hvis man skal ansette en ny person? Så blir man nødt til å
             diskriminere hvis denne personen har en funksjonsnedsettelse, fordi
-            hen da ikke kan bruke systemet - og det er ikke lovlig! - eller så
-            må man uansett endre på systemet
+            hen da ikke kan bruke systemet (er det lovlig?) eller så må man
+            uansett endre på systemet
           </li>
-          <li>Blabla</li>
+          <li>...</li>
         </ul>
       </details>
     </div>

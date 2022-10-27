@@ -10,7 +10,7 @@ export function Claim7(): JSX.Element {
           <li>
             Stemmer, UU er ikke KUN produkteiernes/prosjektledernes ansvar
           </li>
-          <li>Blabla</li>
+          <li>...</li>
         </ul>
       </details>
       <h3>
@@ -29,6 +29,7 @@ export function Claim7(): JSX.Element {
             Bedre å gjøre småendringer hele tiden, enn store skippertak i
             ettertid.
           </li>
+          <li>...</li>
         </ul>
       </details>
     </div>
