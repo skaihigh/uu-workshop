@@ -24,8 +24,8 @@ export function Examples(): JSX.Element {
     <>
       <Toc sectionNames={sectionNames} title="Naviger eksempler" id="toc" />
       <h1 id="maincontent">Eksempler</h1>
-      <SiteSection title="Forklaring" anchorName="explain">
-        <p>vi forklarer vi forklarer vi forklarer vi forklarer</p>
+      <SiteSection title="Eksempler på bra (og dårlig) UU" anchorName="explain">
+        <p>Lett å gå seg bort :)</p>
       </SiteSection>
 
       <SiteSection title="Å skrive for alle" anchorName="writing-for-all">

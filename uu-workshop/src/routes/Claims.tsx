@@ -44,8 +44,8 @@ export function Claims(): JSX.Element {
     <>
       <Toc sectionNames={sectionNames} title="Naviger påstander" id="toc" />
       <h1 id="maincontent">Påstander</h1>
-      <SiteSection title="Forklaring" anchorName="explain">
-        <p>vi forklarer vi forklarer vi forklarer vi forklarer</p>
+      <SiteSection title="Hva syns vi?" anchorName="explain">
+        <p>Kjør diskusjon!</p>
       </SiteSection>
 
       <SiteSection

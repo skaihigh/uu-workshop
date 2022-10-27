@@ -15,8 +15,11 @@ export function Tasks(): JSX.Element {
     <>
       <Toc sectionNames={sectionNames} title="Naviger oppgaver" id="toc" />
       <h1 id="maincontent">Oppgaver</h1>
-      <SiteSection title="Forklaring" anchorName="explain">
-        <p>vi forklarer vi forklarer vi forklarer vi forklarer</p>
+      <SiteSection
+        title="Sett ned funksjonsevnen for en stund"
+        anchorName="explain"
+      >
+        <p>... og gå i noen andres sko</p>
       </SiteSection>
 
       <SiteSection title="Lær å bruke skjermleser" anchorName="task1">
