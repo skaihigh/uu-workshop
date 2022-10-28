@@ -6,5 +6,6 @@ export * from './Claim5'
 export * from './Claim6'
 export * from './Claim7'
 export * from './Claim8'
+export * from './Claim9'
 
 export * from './Conclusion'

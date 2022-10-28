@@ -29,6 +29,10 @@ export function Claim7(): JSX.Element {
             Bedre å gjøre småendringer hele tiden, enn store skippertak i
             ettertid.
           </li>
+          <li>
+            På et eller annet tidspunkt (snart?) vil det bli bøter for brudd på
+            reglene.
+          </li>
           <li>...</li>
         </ul>
       </details>
