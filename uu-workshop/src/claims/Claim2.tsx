@@ -19,8 +19,7 @@ export function Claim2(): JSX.Element {
         <ul className="disc-list">
           <li>
             Burde denne ‘spesialkompetansen’ egentlig være ‘grunnleggende’
-            kompetanse? Kan man påstå man ikke ‘kan’ programmere før man
-            inkluderer UU-hensyn i kodestilen sin?
+            kompetanse? UU er nå en del av utdannelsen for nye utviklere.
           </li>
           <li>...</li>
         </ul>

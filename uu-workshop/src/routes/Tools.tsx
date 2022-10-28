@@ -3,18 +3,33 @@ export function Tools(): JSX.Element {
     <>
       <h1 id="maincontent">Verktøy</h1>
       <h2>
-        <a href="https://pa11y.org/" title="Pa11y hjemmeside">
+        <a
+          href="https://www.w3.org/WAI/ER/tools/"
+          target="_blank"
+          rel="noreferrer"
+          title="Web Accessibility Evaluation Tools List"
+        >
+          Web Accessibility Evaluation Tools List
+        </a>
+      </h2>
+      <h2>
+        <a
+          href="https://pa11y.org/"
+          title="Pa11y hjemmeside"
+          target="_blank"
+          rel="noreferrer"
+        >
           Pa11y
         </a>
       </h2>
       <p>
-        Open source verktøy som gir deg mulighet til å integrere
-        <abbr title="Web Content Accessibility Guidelines"> WCAG</abbr> testing
-        og validering i din byggeprosess, manuelt fra kommandolinja eller for
+        Open source-verktøy som gir deg mulighet til å integrere{' '}
+        <abbr title="Web Content Accessibility Guidelines">WCAG</abbr>-testing
+        og -validering i din byggeprosess, manuelt fra kommandolinja eller for
         eksempel som en integrert del av hot-reloading i ditt utviklingsmiljø.
       </p>
       <p>
-        Gir deg mulighet for å velge niva A, AA eller AAA, men også og legge til
+        Gir deg mulighet for å velge niva A, AA eller AAA, men også å legge til
         enkeltregler med direkte referanse til W3C sine
         <span lang="en">guidelines</span>.
       </p>

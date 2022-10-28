@@ -23,12 +23,12 @@ export function Claim3(): JSX.Element {
           <li>
             Mange funksjonsnedsettelser er ikke synlige, som f.eks. autisme,
             epilepsi, mildere grad av svaksynthet, ‘musearm’, o.l. - så man kan
-            aldri faktisk være helt sikker på om dette ikke gjelder vår
-            brukergruppe også
+            aldri være helt sikker på om dette ikke gjelder vår brukergruppe
+            også
           </li>
           <li>
             15% av Norges befolkning har en eller annen form for
-            funksjonsnedsettelse
+            funksjonsnedsettelse (kilde: Bufdir)
           </li>
           <li>...</li>
         </ul>

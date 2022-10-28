@@ -28,7 +28,7 @@ export function Claims(): JSX.Element {
       'claim-4-anchor',
     ],
     [
-      'Man trenger ikke å implementere alle anbefalingene fra WAI / overholde alle reglene fra WCAG',
+      'Man trenger ikke å implementere alle anbefalingene / overholde alle reglene',
       'claim-5-anchor',
     ],
     ['UU er ikke utviklernes ansvar', 'claim-6-anchor'],
@@ -77,7 +77,7 @@ export function Claims(): JSX.Element {
       </SiteSection>
 
       <SiteSection
-        title="Man trenger ikke å implementere alle anbefalingene fra WAI / overholde alle reglene fra WCAG"
+        title="Man trenger ikke å implementere alle anbefalingene / overholde alle reglene"
         anchorName="claim-5-anchor"
       >
         <Claim5 />

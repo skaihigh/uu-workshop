@@ -8,8 +8,9 @@ export function Conclusion(): JSX.Element {
           nedsatt funksjonsevne.
         </div>
         <div className="claims conclusion">
-          En bruker med nedsatt funksjonsevne er først funksjons<i>hemmet</i>{' '}
-          når hen møter et system som ikke er tilgjengelig.
+          En bruker med <i>nedsatt funksjonsevne</i> er først{' '}
+          <i>funksjonshemmet</i> når hen møter et system som ikke er
+          tilgjengelig.
         </div>
       </details>
     </>

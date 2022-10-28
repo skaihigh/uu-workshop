@@ -1,20 +1,25 @@
 import { SiteSection, Toc } from '../components'
 import { ScreenReader } from '../tasks/ScreenReader'
-import { UserNotification } from '../tasks/UserNotification'
+// import { UserNotification } from '../tasks/UserNotification'
 import { ZoomOut } from '../tasks/ZoomOut'
 import { KeyboardNavigation } from '../tasks/KeyboardNavigation'
+import { Validate } from '../tasks/Validate'
+import { TakeAway } from '../tasks/TakeAway'
 
 export function Tasks(): JSX.Element {
   const sectionNames = [
-    ['Bruk skjermleser', 'task1'],
-    ['Zoom ut', 'task2'],
+    ['Valider en side', 'task1'],
+    ['Bruk skjermleser', 'task2'],
     ['Naviger ved å kun bruke keyboardet', 'task3'],
-    ['Varsel til bruker', 'task4'],
+    ['Zoom ut', 'task4'],
+    // ['Varsel til bruker', 'task4'],
+    ['Take-away?', 'task5'],
   ]
   return (
     <>
       <Toc sectionNames={sectionNames} title="Naviger oppgaver" id="toc" />
       <h1 id="maincontent">Oppgaver</h1>
+
       <SiteSection
         title="Sett ned funksjonsevnen for en stund"
         anchorName="explain"
@@ -22,12 +27,12 @@ export function Tasks(): JSX.Element {
         <p>... og gå i noen andres sko</p>
       </SiteSection>
 
-      <SiteSection title="Lær å bruke skjermleser" anchorName="task1">
-        <ScreenReader />
+      <SiteSection title="Valider en side" anchorName="task1">
+        <Validate />
       </SiteSection>
 
-      <SiteSection title="Zoom ut" anchorName="task2">
-        <ZoomOut />
+      <SiteSection title="Lær å bruke skjermleser" anchorName="task2">
+        <ScreenReader />
       </SiteSection>
 
       <SiteSection
@@ -37,8 +42,17 @@ export function Tasks(): JSX.Element {
         <KeyboardNavigation />
       </SiteSection>
 
-      <SiteSection title="Varsel til bruker" anchorName="task4">
+      <SiteSection title="Zoom ut" anchorName="task4">
+        <ZoomOut />
+      </SiteSection>
+
+      {/* TODO: Christian - hva er poenget med denne oppgaven? */}
+      {/* <SiteSection title="Varsel til bruker" anchorName="task4">
         <UserNotification />
+      </SiteSection> */}
+
+      <SiteSection title="Take-away?" anchorName="task5">
+        <TakeAway />
       </SiteSection>
     </>
   )

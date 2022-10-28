@@ -7,7 +7,10 @@ export function Claim5(): JSX.Element {
       <details>
         <summary>?</summary>
         <ul className="disc-list">
-          <li>...</li>
+          <li>
+            Man kan bare notere bruddene på reglene i
+            Tilgjengelighetserklæringen, så er man innafor
+          </li>
           <li>...</li>
         </ul>
       </details>

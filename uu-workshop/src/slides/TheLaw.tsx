@@ -29,7 +29,7 @@ export function TheLaw(): JSX.Element {
             standarden WCAG 2.0
           </a>
         </li>
-        <li>Fagapplikasjoner er unntatt WCAG (!)</li>
+        <li>Fagapplikasjoner er unntatt WCAG</li>
       </ul>
       <br />
       <br />
